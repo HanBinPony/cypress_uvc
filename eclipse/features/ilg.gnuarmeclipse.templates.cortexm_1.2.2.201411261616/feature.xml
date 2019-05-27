@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="ilg.gnuarmeclipse.templates.cortexm"
+      label="%featureName"
+      version="1.2.2.201411261616"
+      provider-name="%providerName"
+      plugin="ilg.gnuarmeclipse.templates.cortexm">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="ilg.gnuarmeclipse.templates.core"
+         download-size="204"
+         install-size="941"
+         version="2.2.2.201411261616"
+         unpack="false"/>
+
+   <plugin
+         id="ilg.gnuarmeclipse.templates.cortexm"
+         download-size="26"
+         install-size="80"
+         version="1.2.2.201411261616"
+         unpack="false"/>
+
+   <plugin
+         id="ilg.gnuarmeclipse.core"
+         download-size="19"
+         install-size="34"
+         version="1.1.1.201411261616"
+         unpack="false"/>
+
+</feature>

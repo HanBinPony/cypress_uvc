@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Generated-from: 1525672650000;type=4
+Bundle-ManifestVersion: 2
+Bundle-Name: SDCC Compiler - Win32 Helpers
+Bundle-SymbolicName: net.sourceforge.eclipsesdcc.win32
+Bundle-Version: 1.0.0
+Bundle-Vendor: holoniq.com
+Fragment-Host: net.sourceforge.eclipsesdcc;bundle-version="[1.0.0,2.0.0)"
+Bundle-Localization: plugin

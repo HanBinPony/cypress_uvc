@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html lang="en"><head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Before you begin</title><link rel="stylesheet" type="text/css" href="book.css"></head>
+
+<body>
+<h1>Before you begin</h1>
+
+<p>You need the eclipse/CDT plugin. Use the following URL in a Site Bookmark in the eclipse update manager: 
+<a href="http://download.eclipse.org/tools/cdt/releases/eclipse3.1">http://download.eclipse.org/tools/cdt/releases/eclipse3.1 </a>.
+Alternatively you can download eclipse/CDT manually from <a href="http://download.eclipse.org/tools/cdt/releases/eclipse3.1">The CDT download page</a>
+</p>
+
+<p>The eclipseSDCC can be installed on all platforms that support both the
+eclipse IDE and the Small Device C Compiler (SDCC). In order to work
+correctly follow the instructions for your platform.</p>
+
+<h2 class="blue">Win32 Platforms</h2>
+
+
+<p>If you do not already have SDCC installed download sdcc-win32 from
+the SDCC download page on <a href="http://sourceforge.net/project/showfiles.php?group_id=599">SourceForge</a>.
+You can install SDCC into any convenient directory.</p>
+
+<p>There is <b>no need</b> to install cygwin if you just want to build
+for embedded targets. The eclipseSDCC plugin comes with a built-in make
+utility that will be used automatically by the eclipse/CDT managed make
+system. If you have cygwin installed it will be ignored when building
+embedded targets using the managed make system.</p>
+
+<p>To confirm that the SDCC compiler is working open a DOS window and
+simply type:</p>
+
+<pre class="snippet"> sdcc --help<br></pre>
+
+<p>You should see the SDCC compiler respond with its help information.</p>
+
+
+
+
+<h2 class="blue">Linux and other SDCC supported platforms</h2>
+
+<p>If you do not already have SDCC installed download sdcc-xxx for your
+platform from the SDCC download page on <a href="http://sourceforge.net/project/showfiles.php?group_id=599">SourceForge</a>.
+</p>
+
+<p>To confirm that the SDCC compiler is working open a terminal window and
+simply type:</p>
+
+<pre class="snippet"> sdcc --help<br></pre>
+
+<p>You should see the SDCC compiler respond with its help information.</p>
+
+<p>The eclipseSDCC plugin for Linux and other platforms uses the host
+systems make and rm utilities. These will probably be installed
+already. If not use your host package manager to install them. Check
+they are installed correctly by typing.</p>
+<pre class="snippet"> make --help<br> rm --help<br></pre>
+
+<p>You should see the utilities respond with its there respective help
+information.</p>
+
+</body></html>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config date="1526999837219" transient="false" version="3.0">
+	<site updateable="true" url="platform:/base/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="org.eclipse.cdt.cross.arm.gnu" version="0.5.4.201202210114" url="features/org.eclipse.cdt.cross.arm.gnu_0.5.4.201202210114/">
+		</feature>
+		<feature id="ilg.gnuarmeclipse.templates.freescale" version="2.2.2.201411261616" url="features/ilg.gnuarmeclipse.templates.freescale_2.2.2.201411261616/">
+		</feature>
+		<feature id="com.zylin.cdt.feature" version="4.18.1" url="features/com.zylin.cdt.feature_4.18.1/" plugin-identifier="com.zylin.embeddedcdt">
+		</feature>
+		<feature id="ilg.gnuarmeclipse.managedbuild.cross" version="1.11.1.201411261616" url="features/ilg.gnuarmeclipse.managedbuild.cross_1.11.1.201411261616/">
+		</feature>
+		<feature id="ilg.gnuarmeclipse.doc.user" version="1.1.1.201411261616" url="features/ilg.gnuarmeclipse.doc.user_1.1.1.201411261616/">
+		</feature>
+		<feature id="ilg.gnuarmeclipse.templates.stm" version="2.2.2.201411261616" url="features/ilg.gnuarmeclipse.templates.stm_2.2.2.201411261616/">
+		</feature>
+		<feature id="ilg.gnuarmeclipse.debug.gdbjtag.jlink" version="2.2.1.201411261616" url="features/ilg.gnuarmeclipse.debug.gdbjtag.jlink_2.2.1.201411261616/">
+		</feature>
+		<feature id="ilg.gnuarmeclipse.debug.gdbjtag.openocd" version="2.1.1.201411261616" url="features/ilg.gnuarmeclipse.debug.gdbjtag.openocd_2.1.1.201411261616/">
+		</feature>
+		<feature id="org.eclipse.cdt.debug.gdbjtag" version="8.3.0.201402142303" url="features/org.eclipse.cdt.debug.gdbjtag_8.3.0.201402142303/">
+		</feature>
+		<feature id="ilg.gnuarmeclipse.packs" version="2.2.1.201411261616" url="features/ilg.gnuarmeclipse.packs_2.2.1.201411261616/">
+		</feature>
+		<feature id="ilg.gnuarmeclipse.templates.cortexm" version="1.2.2.201411261616" url="features/ilg.gnuarmeclipse.templates.cortexm_1.2.2.201411261616/">
+		</feature>
+	</site>
+</config>

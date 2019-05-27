@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<!-- 
+  
+  SDCC managed make specfication. This spec is based as far as possible on 
+  the GCC spec that is shipped with CDT 
+  
+  see@ org.eclipse.cdt.managedbuilder.gnu.ui/plugin.xml
+  
+-->
+<plugin>
+  <extension point="org.eclipse.help.toc">
+    <toc
+      file="help/toc.xml"
+      primary="true" />
+  </extension>
+  <extension
+    id="cdt.managed.build.info"
+    name="Managed Build Tools Description"
+    point="org.eclipse.cdt.managedbuilder.core.buildDefinitions">
+    <managedBuildRevision fileVersion="3.0.0"></managedBuildRevision>
+    <!-- SDCC Compiler -->
+    <tool
+      command="sdcc -c"
+      commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG}${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}"
+      id="cdt.managedbuild.tool.sdcc.c.compiler"
+      isAbstract="true"
+      name="%ToolName.compiler.sdcc.c"
+      natureFilter="cnature"
+      outputFlag="-o">
+      <optionCategory
+        owner="cdt.managedbuild.tool.sdcc.c.compiler"
+        name="%Option.Processor"
+        id="sdcc.c.compiler.category.processor">
+      </optionCategory>
+      <optionCategory
+        owner="cdt.managedbuild.tool.sdcc.c.compiler"
+        name="%OptionCategory.Preproc"
+        id="sdcc.c.compiler.category.preprocessor">
+      </optionCategory>
+      <option
+        defaultValue="false"
+        name="%Option.Posix.Nostdinc"
+        category="sdcc.c.compiler.category.preprocessor"
+        command="-nostdinc"
+        id="sdcc.c.compiler.option.preprocessor.nostdinc"
+        valueType="boolean">
+      </option>
+      <option
+        defaultValue="false"
+        name="%Option.Posix.PreprocOnly"
+        category="sdcc.c.compiler.category.preprocessor"
+        command="-E"
+        id="sdcc.c.compiler.option.preprocessor.preprocess"
+        valueType="boolean">
+      </option>
+      <optionCategory
+        owner="cdt.managedbuild.tool.sdcc.c.compiler"
+        name="%OptionCategory.Symbols"
+        id="sdcc.c.compiler.category.symbols">
+      </optionCategory>
+      <option
+        name="%Option.Posix.DefSym"
+        category="sdcc.c.compiler.category.symbols"
+        command="-D"
+        id="sdcc.c.compiler.option.preprocessor.def.symbols"
+        valueType="definedSymbols">
+      </option>
+      <option
+        name="%Option.Posix.UndefSym"
+        category="sdcc.c.compiler.category.symbols"
+        command="-U"
+        id="sdcc.c.compiler.option.preprocessor.undef.symbol"
+        valueType="stringList">
+      </option>
+      <optionCategory
+        owner="cdt.managedbuild.tool.sdcc.c.compiler"
+        name="%OptionCategory.Dirs"
+        id="sdcc.c.compiler.category.dirs">
+      </optionCategory>
+      <option
+        name="%Option.Posix.InclPaths"
+        category="sdcc.c.compiler.category.dirs"
+        command="-I"
+        id="sdcc.c.compiler.option.include.paths"
+        valueType="includePath"
+        browseType="directory">
+      </option>
+      <optionCategory
+        owner="cdt.managedbuild.tool.sdcc.c.compiler"
+        name="%OptionCategory.Debug"
+        id="sdcc.c.compiler.category.debug">
+      </optionCategory>
+      <optionCategory
+        owner="cdt.managedbuild.tool.sdcc.c.compiler"
+        name="%OptionCategory.Warn"
+        id="sdcc.c.compiler.category.warnings">
+      </optionCategory>
+      <option
+        defaultValue="false"
+        name="%Option.Posix.Warn.Syntax"
+        category="sdcc.c.compiler.category.warnings"
+        command="-fsyntax-only"
+        id="sdcc.c.compiler.option.warnings.syntax"
+        valueType="boolean">
+      </option>
+      <option
+        defaultValue="false"
+        name="%Option.Posix.Warn.Pedandic"
+        category="sdcc.c.compiler.category.warnings"
+        command="-pedantic"
+        id="sdcc.c.compiler.option.warnings.pedantic"
+        valueType="boolean">
+      </option>
+      <option
+        defaultValue="false"
+        name="%Option.Posix.Warn.PedErrors"
+        category="sdcc.c.compiler.category.warnings"
+        command="-pedantic-errors"
+        id="sdcc.c.compiler.option.warnings.pedantic.error"
+        valueType="boolean">
+      </option>
+      <option
+        defaultValue="false"
+        name="%Option.Posix.Warn.nowarn"
+        category="sdcc.c.compiler.category.warnings"
+        command="-w"
+        id="sdcc.c.compiler.option.warnings.nowarn"
+        valueType="boolean">
+      </option>
+      <option
+        defaultValue="false"
+        name="%Option.Posix.Warn.allwarn"
+        category="sdcc.c.compiler.category.warnings"
+        command="-Wall"
+        id="sdcc.c.compiler.option.warnings.allwarn"
+        valueType="boolean">
+      </option>
+      <option
+        defaultValue="false"
+        name="%Option.Posix.Warn.toerrs"
+        category="sdcc.c.compiler.category.warnings"
+        command="-Werror"
+        id="sdcc.c.compiler.option.warnings.toerrors"
+        valueType="boolean">
+      </option>
+      <optionCategory
+        owner="cdt.managedbuild.tool.sdcc.c.compiler"
+        name="%OptionCategory.Misc"
+        id="sdcc.c.compiler.category.other">
+      </optionCategory>
+      <option
+        defaultValue="false"
+        name="%Option.Posix.Verbose"
+        category="sdcc.c.compiler.category.other"
+        command="--verbose"
+        id="sdcc.c.compiler.option.misc.verbose"
+        valueType="boolean">
+      </option>
+      <option
+        defaultValue="false"
+        name="%Option.Posix.Ansi"
+        category="sdcc.c.compiler.category.other"
+        command="-ansi"
+        id="sdcc.c.compiler.option.misc.ansi"
+        valueType="boolean">
+      </option>
+      <option
+        category="sdcc.c.compiler.category.other"
+        command="--codeseg $v"
+        id="sdcc.c.compiler.category.other.codeseg"
+        name="%Option.codeseg"
+        resourceFilter="all"
+        tip="%Option.codeseg.tip"
+        valueType="string" />
+      <option
+        category="sdcc.c.compiler.category.other"
+        command="--codeseg $v"
+        id="sdcc.c.compiler.category.other.constseg"
+        name="%Option.constseg"
+        resourceFilter="all"
+        tip="%Option.constseg.tip"
+        valueType="string" />
+      <inputType
+        sourceContentType="org.eclipse.cdt.core.cSource"
+        sources="c"
+        dependencyContentType="org.eclipse.cdt.core.cHeader"
+        dependencyExtensions="h"
+        dependencyCalculator="net.sourceforge.eclipsesdcc.managedbuilder.makegen.DefaultSDCCDependencyCalculator"
+        id="cdt.managedbuild.tool.sdcc.c.compiler.input">
+      </inputType>
+      <outputType
+        outputs="rel"
+        buildVariable="RELS"
+        id="cdt.managedbuild.tool.sdcc.c.compiler.output">
+      </outputType>
+    </tool>
+    <!-- SDCC Linker -->
+    <tool
+      natureFilter="cnature"
+      name="%ToolName.linker.sdcc.c"
+      outputFlag="-o"
+      command="sdcc"
+      id="cdt.managedbuild.tool.sdcc.c.linker">
+      <envVarBuildPath
+        pathType="buildpathLibrary"
+        variableList="LIBRARY_PATH">
+      </envVarBuildPath>
+      <optionCategory
+        owner="cdt.managedbuild.tool.sdcc.c.linker"
+        name="%OptionCategory.General"
+        id="sdcc.c.link.category.general">
+      </optionCategory>
+      <option
+        defaultValue="false"
+        name="%Option.Posix.Linker.NoStartFiles"
+        category="sdcc.c.link.category.general"
+        command="-nostartfiles"
+        id="sdcc.c.link.option.nostart"
+        valueType="boolean">
+      </option>
+      <option
+        defaultValue="false"
+        name="%Option.Posix.Linker.NoDefLibs"
+        category="sdcc.c.link.category.general"
+        command="-nodefaultlibs"
+        id="sdcc.c.link.option.nodeflibs"
+        valueType="boolean">
+      </option>
+      <option
+        defaultValue="false"
+        name="%Option.Posix.Linker.NoStdLibs"
+        category="sdcc.c.link.category.general"
+        command="-nostdlib"
+        id="sdcc.c.link.option.nostdlibs"
+        valueType="boolean">
+      </option>
+      <option
+        defaultValue="false"
+        name="%Option.Posix.Linker.Strip"
+        category="sdcc.c.link.category.general"
+        command="-s"
+        id="sdcc.c.link.option.strip"
+        valueType="boolean">
+      </option>
+      <option
+        defaultValue="false"
+        name="%Option.Posix.Linker.Static"
+        category="sdcc.c.link.category.general"
+        command="-static"
+        id="sdcc.c.link.option.noshared"
+        valueType="boolean">
+      </option>
+      <optionCategory
+        owner="cdt.managedbuild.tool.sdcc.c.linker"
+        name="%OptionCategory.Libs"
+        id="sdcc.c.link.category.libs">
+      </optionCategory>
+      <option
+        name="%Option.Posix.Libs"
+        category="sdcc.c.link.category.libs"
+        command="-l"
+        id="sdcc.c.link.option.libs"
+        browseType="none"
+        valueType="libs">
+      </option>
+      <option
+        name="%Option.Posix.Libsearch"
+        category="sdcc.c.link.category.libs"
+        command="-L"
+        id="sdcc.c.link.option.paths"
+        browseType="directory"
+        valueType="stringList">
+      </option>
+      <optionCategory
+        owner="cdt.managedbuild.tool.sdcc.c.linker"
+        name="%OptionCategory.Misc"
+        id="sdcc.c.link.category.other">
+      </optionCategory>
+      <option
+        name="%Option.Posix.Linker.Flags"
+        category="sdcc.c.link.category.other"
+        valueType="string"
+        id="sdcc.c.link.option.ldflags">
+      </option>
+      <option
+        name="%Option.Posix.Linker.XLinker"
+        category="sdcc.c.link.category.other"
+        command="-Xlinker ${VALUE}"
+        valueType="stringList"
+        id="sdcc.c.link.option.other">
+      </option>
+      <option
+        name="%Option.Posix.UserObjs"
+        category="sdcc.c.link.category.other"
+        browseType="file"
+        valueType="userObjs"
+        id="sdcc.c.link.option.userobjs">
+      </option>
+      <optionCategory
+        owner="cdt.managedbuild.tool.sdcc.c.linker"
+        name="%OptionCategory.Shared.Settings"
+        id="sdcc.c.link.category.shared">
+      </optionCategory>
+      <option
+        defaultValue="false"
+        name="%Option.Posix.Linker.Shared"
+        category="sdcc.c.link.category.shared"
+        command="-shared"
+        id="sdcc.c.link.option.shared"
+        valueType="boolean">
+      </option>
+      <option
+        name="%Option.Posix.Linker.SOName"
+        category="sdcc.c.link.category.shared"
+        command="-Wl,-soname="
+        id="sdcc.c.link.option.soname"
+        valueType="string">
+      </option>
+      <option
+        name="%Option.Posix.Linker.Implib"
+        category="sdcc.c.link.category.shared"
+        command="-Wl,--out-implib="
+        id="sdcc.c.link.option.implname"
+        valueType="string">
+      </option>
+      <option
+        name="%Option.Posix.Linker.Defname"
+        category="sdcc.c.link.category.shared"
+        command="-Wl,--output-def="
+        id="sdcc.c.link.option.defname"
+        valueType="string">
+      </option>
+      <inputType
+        sources="rel"
+        multipleOfType="true"
+        dependencyCalculator="org.eclipse.cdt.managedbuilder.makegen.internal.DefaultNoDependencyCalculator"
+        buildVariable="RELS"
+        id="cdt.managedbuild.tool.sdcc.c.linker.input">
+        <additionalInput
+          paths="$(USER_RELS)"
+          kind="additionalinputdependency">
+        </additionalInput>
+        <additionalInput
+          paths="$(LIBS)"
+          kind="additionalinput">
+        </additionalInput>
+      </inputType>
+      <outputType
+        outputs="ihx"
+        buildVariable="EXECUTABLES"
+        nameProvider="org.eclipse.cdt.managedbuilder.makegen.sdcc.GnuLinkOutputNameProvider"
+        id="cdt.managedbuild.tool.sdcc.c.linker.output">
+      </outputType>
+    </tool>
+    <!-- SDCC Assembler -->
+    <tool
+      command="sdas8051 -losg"
+      name="%ToolName.assembler.sdcc"
+      outputFlag="-o"
+      id="cdt.managedbuild.tool.sdcc.assembler"
+      natureFilter="cnature">
+      <optionCategory
+        owner="cdt.managedbuild.tool.sdcc.assembler"
+        name="%OptionCategory.General"
+        id="sdcc.asm.category.general">
+      </optionCategory>
+      <option
+        name="%Option.Sdcc.Assembler.Flags"
+        category="sdcc.asm.category.general"
+        valueType="string"
+        id="sdcc.both.asm.option.flags">
+      </option>
+      <option
+        command="-I"
+        valueType="includePath"
+        category="sdcc.asm.category.general"
+        browseType="directory"
+        name="%Option.Posix.InclPaths"
+        id="sdcc.both.asm.option.include.paths" />
+      <option
+        command="-W"
+        defaultValue="false"
+        valueType="boolean"
+        category="sdcc.asm.category.general"
+        name="%Option.Sdcc.Assembler.warn.suppress"
+        id="sdcc.both.asm.option.warnings.nowarn" />
+      <option
+        command="-v"
+        defaultValue="false"
+        valueType="boolean"
+        category="sdcc.asm.category.general"
+        name="%Option.Sdcc.Assembler.version"
+        id="sdcc.both.asm.option.version" />
+      <inputType
+        sourceContentType="org.eclipse.cdt.core.asmSource"
+        sources="s,S"
+        id="cdt.managedbuild.tool.sdcc.assembler.input">
+      </inputType>
+      <outputType
+        outputs="rel"
+        buildVariable="RELS"
+        id="cdt.managedbuild.tool.sdcc.assembler.output">
+      </outputType>
+    </tool>
+    <builder
+      isAbstract="true"
+      id="cdt.managedbuild.target.sdcc.builder"
+      command="make"
+      arguments="-k"
+      variableFormat="${=}"
+      isVariableCaseSensitive="true"
+      reservedMacroNames="ROOT,DEPS,OBJS,.*_SRCS,EXECUTABLES,SUBDIRS,LIBS,USER_OBJS,.*_INPUTS,.*_OUTPUTS"
+      buildfileGenerator="org.eclipse.cdt.managedbuilder.makegen.sdcc.GnuMakefileGenerator"
+      macroInputFileNameValue="$(notdir $&lt;)"
+      macroInputFileExtValue="$(suffix $(notdir $&lt;))"
+      macroInputFileBaseNameValue="$(basename $(notdir $&lt;))"
+      macroInputFileRelPathValue="$&lt;"
+      macroInputDirRelPathValue="$(dir $&lt;)"
+      macroOutputFileNameValue="$(notdir $@)"
+      macroOutputFileExtValue="$(suffix $(notdir $@))"
+      macroOutputFileBaseNameValue="$(basename $(notdir $@))"
+      macroOutputFileRelPathValue="$@"
+      macroOutputDirRelPathValue="$(dir $@)">
+    </builder>
+    <projectType
+      isAbstract="false"
+      isTest="false"
+      name="%TargetName.sdcc.8051"
+      id="cdt.managedbuild.target.sdcc.exe">
+      <configuration
+        artifactExtension="ihx"
+        cleanCommand="rm -rf"
+        errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser"
+        id="cdt.managedbuild.config.sdcc.exe.release"
+        name="%ConfigName.Rel">
+        <toolChain
+              archList="all"
+              configurationEnvironmentSupplier="net.sourceforge.eclipsesdcc.managedbuilder.envvar.SDCCConfigurationEnvironmentSupplier"
+              id="cdt.managedbuild.toolchain.sdcc.exe.release"
+              name="%ToolChainName.Rel"
+              osList="solaris,linux,hpux,aix,qnx,win32"
+              scannerConfigDiscoveryProfileId="net.sourceforge.eclipsesdcc.SDCCManagedMakePerProjectProfile"
+              targetTool="cdt.managedbuild.tool.sdcc.c.linker.exe.release">
+          <targetPlatform
+            id="cdt.managedbuild.target.sdcc.platform.exe.release"
+            name="%PlatformName.Rel"
+            binaryParser="org.eclipse.cdt.core.ELF"
+            osList="solaris,linux,hpux,aix,qnx,win32"
+            archList="all">
+          </targetPlatform>
+          <builder
+            superClass="cdt.managedbuild.target.sdcc.builder"
+            id="cdt.managedbuild.target.sdcc.builder.exe.release"
+            name="%BuilderName.Rel"
+            command="make"
+            arguments="-k"
+            buildfileGenerator="org.eclipse.cdt.managedbuilder.makegen.sdcc.GnuMakefileGenerator">
+          </builder>
+          <tool
+            id="cdt.managedbuild.tool.sdcc.c.compiler.exe.release"
+            superClass="cdt.managedbuild.tool.sdcc.c.compiler">
+            <optionCategory
+              owner="cdt.managedbuild.tool.sdcc.c.compiler"
+              name="%OptionCategory.Memory"
+              id="sdcc.c.compiler.category.memory">
+            </optionCategory>
+            <option
+              name="%Option.MemoryModel"
+              category="sdcc.c.compiler.category.memory"
+              id="sdcc.c.compiler.category.other.memorymodel"
+              valueType="enumerated">
+              <enumeratedOptionValue
+                command="--model-small"
+                id="sdcc.c.compiler.category.other.memorymodel.small"
+                isDefault="true"
+                name="%Option.MemoryModel.small">
+              </enumeratedOptionValue>
+              <enumeratedOptionValue
+                name="%Option.MemoryModel.large"
+                command="--model-large"
+                id="sdcc.c.compiler.category.other.memorymodel.large">
+              </enumeratedOptionValue>
+            </option>
+            <option
+              category="sdcc.c.compiler.category.memory"
+              command="--xstack"
+              defaultValue="false"
+              id="sdcc.c.compiler.category.other.xstack"
+              name="%Option.XStack"
+              resourceFilter="all"
+              valueType="boolean" />
+            <option
+              category="sdcc.c.compiler.category.memory"
+              command="--pack-iram"
+              defaultValue="false"
+              id="sdcc.c.compiler.category.other.packiram"
+              name="%Option.packiram"
+              resourceFilter="all"
+              valueType="boolean" />
+            <option
+              category="sdcc.c.compiler.category.memory"
+              command="--iram-size $v"
+              id="sdcc.c.compiler.category.other.iramsize"
+              name="%Option.iramsize"
+              resourceFilter="all"
+              valueType="string" />
+            <option
+              category="sdcc.c.compiler.category.memory"
+              command="--xram-size $v"
+              id="sdcc.c.compiler.category.other.xramsize"
+              name="%Option.xramsize"
+              resourceFilter="all"
+              valueType="string" />
+            <option
+              category="sdcc.c.compiler.category.memory"
+              command="--code-size $v"
+              id="sdcc.c.compiler.category.other.codesize"
+              name="%Option.codesize"
+              resourceFilter="all"
+              valueType="string" />
+            <option
+              category="sdcc.c.compiler.category.memory"
+              command="--stack-size $v"
+              id="sdcc.c.compiler.category.other.stacksize"
+              name="%Option.stacksize"
+              resourceFilter="all"
+              valueType="string" />
+          </tool>
+          <tool
+            id="cdt.managedbuild.tool.sdcc.c.linker.exe.release"
+            superClass="cdt.managedbuild.tool.sdcc.c.linker">
+          </tool>
+          <tool
+            id="cdt.managedbuild.tool.sdcc.assembler.exe.release"
+            superClass="cdt.managedbuild.tool.sdcc.assembler">
+          </tool>
+        </toolChain>
+      </configuration>
+      <configuration
+        artifactExtension="hex"
+        cleanCommand="rm -rf"
+        errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser"
+        id="cdt.managedbuild.config.sdcc.exe.debug"
+        name="%ConfigName.Dbg">
+        <toolChain
+              id="cdt.managedbuild.toolchain.sdcc.exe.debug"
+              name="%ToolChainName.Rel"
+              superClass="cdt.managedbuild.toolchain.sdcc.exe.release">
+          <tool
+            command="sdcc --debug -c"
+            id="cdt.managedbuild.tool.sdcc.c.compiler.exe.debug"
+            superClass="cdt.managedbuild.tool.sdcc.c.compiler.exe.release">
+          </tool>
+          <tool
+            command="sdcc --debug"
+            id="cdt.managedbuild.tool.sdcc.c.linker.exe.debug"
+            superClass="cdt.managedbuild.tool.sdcc.c.linker.exe.release">
+          </tool>
+        </toolChain>
+      </configuration>
+    </projectType>
+  </extension>
+  <extension
+    id="SDCCManagedMakePerProjectProfile"
+    name="SDCC C managed make per project SCD profile"
+    point="org.eclipse.cdt.make.core.ScannerConfigurationDiscoveryProfile">
+    <scannerInfoCollector
+      class="net.sourceforge.eclipsesdcc.managedbuilder.scannerconfig.DefaultSDCCScannerInfoCollector"
+      scope="project" />
+    <scannerInfoProvider providerId="specsFile">
+      <run
+        arguments="-V -E -Wp -P -dD ${plugin_state_location}/${specs_file}"
+        command="sdcc"
+        class="net.sourceforge.eclipsesdcc.make.SDCCSpecsRunSIProvider" />
+      <scannerInfoConsoleParser
+        class="net.sourceforge.eclipsesdcc.make.SDCCSpecsConsoleParser" />
+    </scannerInfoProvider>
+  </extension>
+</plugin>

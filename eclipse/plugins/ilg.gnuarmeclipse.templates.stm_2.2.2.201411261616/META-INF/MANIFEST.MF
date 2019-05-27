@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ActivationPolicy: lazy
+Built-By: ilg
+Eclipse-BundleShape: dir
+Bundle-Name: %bundle.name
+Bundle-Localization: plugin
+Created-By: Apache Maven
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: ilg.gnuarmeclipse.core,ilg.gnuarmeclipse.templates.cor
+ e,org.eclipse.ui;bundle-version="3.105.0",org.eclipse.core.runtime;bu
+ ndle-version="3.9.0"
+Bundle-Vendor: %bundle.vendor
+Build-Jdk: 1.7.0_45
+Bundle-Version: 2.2.2.201411261616
+Bundle-Activator: ilg.gnuarmeclipse.templates.stm.Activator
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: ilg.gnuarmeclipse.templates.stm;singleton:=true
+Archiver-Version: Plexus Archiver
+

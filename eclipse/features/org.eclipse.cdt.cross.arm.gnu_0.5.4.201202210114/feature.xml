@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.cdt.cross.arm.gnu"
+      label="GNU ARM C/C++ Development Support"
+      version="0.5.4.201202210114"
+      provider-name="%providerName"
+      os="linux,macosx,win32">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="http://www.eclipse.org/legal/epl-v10.html">
+      %licence
+   </license>
+
+   <url>
+      <update label="%updateSiteName" url="http://gnuarmeclipse.sourceforge.net/updates"/>
+      <discovery label="%discoverySiteName" url="http://gnuarmeclipse.sourceforge.net/updates"/>
+   </url>
+
+   <requires>
+      <import plugin="org.eclipse.cdt.managedbuilder.core" version="5.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.cdt.ui" version="5.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.cdt.make.ui" version="5.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.cdt.core" version="5.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.resources" version="3.4.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.runtime" version="3.4.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jface" version="3.4.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui" version="3.4.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.console" version="3.3.0" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.cdt.cross.arm.gnu"
+         download-size="0"
+         install-size="0"
+         version="0.5.4.201202210114"/>
+
+</feature>

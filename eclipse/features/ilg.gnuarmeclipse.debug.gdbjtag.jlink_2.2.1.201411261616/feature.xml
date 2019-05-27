@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="ilg.gnuarmeclipse.debug.gdbjtag.jlink"
+      label="%featureName"
+      version="2.2.1.201411261616"
+      provider-name="%providerName"
+      plugin="ilg.gnuarmeclipse.debug.gdbjtag.jlink">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="ilg.gnuarmeclipse.debug.gdbjtag.jlink"
+         download-size="208"
+         install-size="424"
+         version="2.2.1.201411261616"
+         unpack="false"/>
+
+   <plugin
+         id="ilg.gnuarmeclipse.debug.gdbjtag.restart"
+         download-size="4"
+         install-size="3"
+         version="1.1.1.201411261616"
+         unpack="false"/>
+
+   <plugin
+         id="ilg.gnuarmeclipse.debug.core"
+         download-size="5"
+         install-size="5"
+         version="1.2.1.201411261616"
+         unpack="false"/>
+
+   <plugin
+         id="ilg.gnuarmeclipse.core"
+         download-size="19"
+         install-size="34"
+         version="1.1.1.201411261616"
+         unpack="false"/>
+
+   <plugin
+         id="ilg.gnuarmeclipse.debug.gdbjtag"
+         download-size="189"
+         install-size="375"
+         version="1.1.1.201411261616"
+         unpack="false"/>
+
+</feature>

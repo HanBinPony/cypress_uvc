@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc
+  label="Eclipse SDCC Compiler Plugin"
+  topic="help/index.html">
+   <topic label="Before you begin"  href="help/beforeYouBegin.html"> </topic>
+   <topic label="Getting Started"  href="help/gettingStarted.html"> 
+      <topic label="Creating an Embedded C Project"  href="help/gettingStarted.html#project"> </topic>
+      <topic label="Creating C Source files"  href="help/gettingStarted.html#source"> </topic>
+      <topic label="SDCC Compiler Errors"  href="help/gettingStarted.html#errors"> </topic>
+      <topic label="What Next"  href="help/gettingStarted.html#next"> </topic>
+   </topic>
+</toc>
