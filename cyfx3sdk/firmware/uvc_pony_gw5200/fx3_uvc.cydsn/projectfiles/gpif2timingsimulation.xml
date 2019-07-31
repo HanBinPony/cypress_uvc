@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GPIFIITimingSimulation version="1">
+  <Clock>100</Clock>
+  <BufferSize>512</BufferSize>
+  <WaterMark>0</WaterMark>
+  <Scenario Name="SCENARIO0" CurrentThread="Thread1">
+    <State StateId="STARTSTATE0" WaitNumber="0" />
+    <State StateId="STATE0" WaitNumber="0" />
+    <State StateId="STATE2" WaitNumber="0" />
+    <State StateId="STATE4" WaitNumber="0" />
+    <State StateId="STATE5" WaitNumber="0" />
+    <State StateId="STATE7" WaitNumber="0" />
+    <State StateId="STATE9" WaitNumber="0" />
+    <State StateId="STATE13" WaitNumber="0" />
+    <State StateId="STATE17" WaitNumber="0" />
+    <State StateId="STATE0" WaitNumber="0" />
+  </Scenario>
+</GPIFIITimingSimulation>
