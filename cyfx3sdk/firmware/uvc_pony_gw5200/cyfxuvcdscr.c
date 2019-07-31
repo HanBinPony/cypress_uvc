@@ -21,7 +21,7 @@
 */
 
 /*
- * This file contains the USB descriptors for the FX3 1080P kit
+ * This file contains the USB descriptors for the GW5+AR0233 1080P kit
  * application.
  */
 
@@ -850,7 +850,8 @@ const uint8_t CyFxUSBSSConfigDscr[] =
         //0x00,0x80,0x53,0x3B,            /* Max bit rate bits/s. */
         0x00,0x4c,0x9e,0x42,            /* Min bit rate bits/s. 2156*1080*30*16bps */
         0x00,0x4c,0x9e,0x42,            /* Max bit rate bits/s. */
-        0x00,0x00,0x80,0x02,            /* Maximum video or still frame size in bytes(Deprecated)*/
+        //0x00,0x00,0x80,0x02,            /* Maximum video or still frame size in bytes(Deprecated)*/
+        0x40,0x0F,0x47,0x00,            /* Maximum video or still frame size in bytes(Deprecated)*/
         //0x0B, 0x8B, 0x02, 0x00,         /* 60fps Default Frame Interval */
         0x15, 0x16, 0x05, 0x00,         /* 30fps Default Frame Interval*/
         0x01,                           /* Frame interval(Frame Rate) types: Only one frame interval supported */
@@ -931,13 +932,13 @@ const uint8_t CyFxUSBManufactureDscr[] =
     {
         0x10,                           /* Descriptor Size */
         CY_U3P_USB_STRING_DESCR,        /* Device Descriptor Type */
-        'C',0x00,
-        'y',0x00,
         'p',0x00,
-        'r',0x00,
-        'e',0x00,
-        's',0x00,
-        's',0x00
+        'o',0x00,
+        'n',0x00,
+        'y',0x00,
+        '.',0x00,
+        'a',0x00,
+        'i',0x00
     };
 
 
@@ -946,8 +947,7 @@ const uint8_t CyFxUSBProductDscr[] =
     {
         0x08,                           /* Descriptor Size */
         CY_U3P_USB_STRING_DESCR,        /* Device Descriptor Type */
-        'F',0x00,
-        'X',0x00,
-        '3',0x00
+        'G',0x00,
+        'W',0x00,
+        '5',0x00
     };
-

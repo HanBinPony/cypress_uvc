@@ -14,9 +14,6 @@
 #define I2C_SLAVEADDR_MASK 0xFE         /* Mask to get actual I2C slave address value without direction bit. */
 #define I2C_SLAVEADDR_READ_BIT	0x01
 
-#define I2C_MEMORY_ADDR_WR 0xA0         /* I2C slave address used to write to an EEPROM. */
-#define I2C_MEMORY_ADDR_RD 0xA1         /* I2C slave address used to read from an EEPROM. */
-
 #define GW5_RESET_GPIO   20			    /* GW5 reset pin is low active */
 #define SENSOR_TRIGGER_GPIO 19			/* the sensor trigger GPIO bypassed GW5 connected to AR0233 through SerDes*/
 
@@ -100,22 +97,6 @@ SensorInit (
  */
 extern void
 SensorReset (
-        void);
-
-/* Function     : SensorInit_1080p_60fps
-   Description  : Configure the GW5200+AR0233 sensor for 1080p 60fps video stream.
-   Parameters   : None
- */
-extern void
-SensorInit_1080p_60fps (
-        void);
-
-/* Function    : SensorI2cBusTest
-   Description : Test whether the GW5200 is connected on the I2C bus.
-   Parameters  : None
- */
-extern uint8_t
-SensorI2cBusTest (
         void);
 
 #endif /* _INCLUDED_SENSOR_H_ */

@@ -156,44 +156,6 @@ SensorRead (
 }
 
 /*
- * Verify that the sensor can be accessed over the I2C bus from FX3.
- */
-uint8_t
-SensorI2cBusTest (
-        void)
-{
-#if 0
-    W5ComReturn_e ret;
-
-	//uint8_t data;
-    uint8_t msg_id;
-
-    // HANBIN: cypress FX3 does not support preamble > 8 byte, therefore w5comapi cannot work with FX3 I2C
-	ret = W5comCallApi(API_CODE_GET_GW5_STATE, 0, NULL, 0x8000, &msg_id);
-	if (ret != w5_com_ret_ok) {
-		CyU3PDebugPrint (4, "failed read gw5 state!\r\n");
-	} else {
-		CyU3PDebugPrint (4, "successfully read state 0x%x!\r\n", msg_id);
-	}
-	CyU3PThreadSleep (200);
-
-
-	if (SensorRead (0x90, 0x00, 0x00, 1, &data) == CY_U3P_SUCCESS) {
-		CyU3PDebugPrint (4, "successfully read max9296 0x%x 0x%x!\r\n", 0x00, data);
-	} else {
-		CyU3PDebugPrint (4, "failed read max9296!\r\n");
-	}
-	CyU3PThreadSleep (200);
-
-    if (ret != w5_com_ret_ok) {
-    	return CY_U3P_ERROR_INVALID_DEV;
-    }
-#endif
-    return CY_U3P_SUCCESS;
-}
-
-
-/*
  * Reset the GW5 through GPIO
  */
 void
@@ -232,9 +194,5 @@ void
 SensorInit (
         void)
 {
-    if (SensorI2cBusTest () != CY_U3P_SUCCESS)        /* Verify that the sensor is connected. */
-    {
-        CyU3PDebugPrint (4, "Error: Reading Sensor ID failed!\r\n");
-        return;
-    }
+	// nothing to do here
 }
