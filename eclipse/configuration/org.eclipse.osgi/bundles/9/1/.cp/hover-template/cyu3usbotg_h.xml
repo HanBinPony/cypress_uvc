@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documentation>
+<helpBook title="Cypress Context Help" type="HELP_TYPE_C">
+<entry keyword="CyU3POtgIsStarted">
+<functionSummary>
+<name>CyU3POtgIsStarted</name>
+<description>
+This function returns whether the OTG module has been started.
+</description>
+<include>
+cyu3usbotg.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyBool_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3POtgIsStarted" href="com.cypress.fx3.doc/html/cyu3usbotg_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3POtgGetPeripheralType">
+<functionSummary>
+<name>CyU3POtgGetPeripheralType</name>
+<description>
+This function returns the type of attached USB peripheral.
+</description>
+<include>
+cyu3usbotg.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyU3POtgPeripheralType_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3POtgGetPeripheralType" href="com.cypress.fx3.doc/html/cyu3usbotg_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3POtgGetMode">
+<functionSummary>
+<name>CyU3POtgGetMode</name>
+<description>
+This function returns the current selected OTG mode.
+</description>
+<include>
+cyu3usbotg.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyU3POtgMode_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3POtgGetMode" href="com.cypress.fx3.doc/html/cyu3usbotg_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3POtgIsDeviceMode">
+<functionSummary>
+<name>CyU3POtgIsDeviceMode</name>
+<description>
+This function returns whether the device mode of operation is allowed.
+</description>
+<include>
+cyu3usbotg.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyBool_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3POtgIsDeviceMode" href="com.cypress.fx3.doc/html/cyu3usbotg_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3POtgIsHostMode">
+<functionSummary>
+<name>CyU3POtgIsHostMode</name>
+<description>
+This function returns whether the host mode of operation is allowed.
+</description>
+<include>
+cyu3usbotg.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyBool_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3POtgIsHostMode" href="com.cypress.fx3.doc/html/cyu3usbotg_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3POtgStart">
+<functionSummary>
+<name>CyU3POtgStart</name>
+<description>
+This function initializes the OTG module.
+</description>
+<include>
+cyu3usbotg.h</include>
+<arguments>
+(CyU3POtgConfig_t *cfg)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3POtgStart" href="com.cypress.fx3.doc/html/cyu3usbotg_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3POtgStop">
+<functionSummary>
+<name>CyU3POtgStop</name>
+<description>
+This function disables the OTG module.
+</description>
+<include>
+cyu3usbotg.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3POtgStop" href="com.cypress.fx3.doc/html/cyu3usbotg_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3POtgSrpStart">
+<functionSummary>
+<name>CyU3POtgSrpStart</name>
+<description>
+Initiates an SRP request.
+</description>
+<include>
+cyu3usbotg.h</include>
+<arguments>
+(uint32_t repeatInterval)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3POtgSrpStart" href="com.cypress.fx3.doc/html/cyu3usbotg_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3POtgSrpAbort">
+<functionSummary>
+<name>CyU3POtgSrpAbort</name>
+<description>
+Aborts SRP request.
+</description>
+<include>
+cyu3usbotg.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3POtgSrpAbort" href="com.cypress.fx3.doc/html/cyu3usbotg_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3POtgRequestHnp">
+<functionSummary>
+<name>CyU3POtgRequestHnp</name>
+<description>
+Requests remote host for the HNP process.
+</description>
+<include>
+cyu3usbotg.h</include>
+<arguments>
+(CyBool_t isEnable)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3POtgRequestHnp" href="com.cypress.fx3.doc/html/cyu3usbotg_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3POtgHnpEnable">
+<functionSummary>
+<name>CyU3POtgHnpEnable</name>
+<description>
+Initiates a role change.
+</description>
+<include>
+cyu3usbotg.h</include>
+<arguments>
+(CyBool_t isEnable)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3POtgHnpEnable" href="com.cypress.fx3.doc/html/cyu3usbotg_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3POtgIsHnpEnabled">
+<functionSummary>
+<name>CyU3POtgIsHnpEnabled</name>
+<description>
+The function checks if a role reversal mode is active or not.
+</description>
+<include>
+cyu3usbotg.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyBool_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3POtgIsHnpEnabled" href="com.cypress.fx3.doc/html/cyu3usbotg_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3POtgIsVBusValid">
+<functionSummary>
+<name>CyU3POtgIsVBusValid</name>
+<description>
+The function checks if a valid VBUS is available.
+</description>
+<include>
+cyu3usbotg.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyBool_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3POtgIsVBusValid" href="com.cypress.fx3.doc/html/cyu3usbotg_8h.html#func-members"/></entry>
+</helpBook>
+</documentation>

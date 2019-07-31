@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documentation>
+<helpBook title="Cypress Context Help" type="HELP_TYPE_C">
+<entry keyword="CyU3PMboxInit">
+<functionSummary>
+<name>CyU3PMboxInit</name>
+<description>
+Initialize the mailbox handler.
+</description>
+<include>
+cyu3mbox.h</include>
+<arguments>
+(CyU3PMboxCb_t callback)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PMboxInit" href="com.cypress.fx3.doc/html/cyu3mbox_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PMboxDeInit">
+<functionSummary>
+<name>CyU3PMboxDeInit</name>
+<description>
+De-initialize the mailbox handler.
+</description>
+<include>
+cyu3mbox.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PMboxDeInit" href="com.cypress.fx3.doc/html/cyu3mbox_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PMboxReset">
+<functionSummary>
+<name>CyU3PMboxReset</name>
+<description>
+Reset the mailbox handler.
+</description>
+<include>
+cyu3mbox.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PMboxReset" href="com.cypress.fx3.doc/html/cyu3mbox_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PMboxWrite">
+<functionSummary>
+<name>CyU3PMboxWrite</name>
+<description>
+This function sends a mailbox message to the external processor.
+</description>
+<include>
+cyu3mbox.h</include>
+<arguments>
+(CyU3PMbox *mbox)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PMboxWrite" href="com.cypress.fx3.doc/html/cyu3mbox_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PMboxRead">
+<functionSummary>
+<name>CyU3PMboxRead</name>
+<description>
+This function reads an incoming mailbox message.
+</description>
+<include>
+cyu3mbox.h</include>
+<arguments>
+(CyU3PMbox *mbox)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PMboxRead" href="com.cypress.fx3.doc/html/cyu3mbox_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PMboxWait">
+<functionSummary>
+<name>CyU3PMboxWait</name>
+<description>
+Wait until the Mailbox register to send messages to P-port is free.
+</description>
+<include>
+cyu3mbox.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PMboxWait" href="com.cypress.fx3.doc/html/cyu3mbox_8h.html#func-members"/></entry>
+</helpBook>
+</documentation>

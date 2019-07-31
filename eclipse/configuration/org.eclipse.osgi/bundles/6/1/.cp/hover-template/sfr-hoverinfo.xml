@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documentation>
+	<helpBook title="SFR Context Help" type="HELP_TYPE_C">
+		<entry keyword="DPL">
+			<functionSummary>
+				<name>DPL</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on DPL" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651216_marker-1067965" />
+		</entry>
+		<entry keyword="DPH">
+			<functionSummary>
+				<name>DPH</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on DPH" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651216_marker-1067965" />
+		</entry>
+		<entry keyword="DPL1">
+			<functionSummary>
+				<name>DPL1</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on DPL1" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651216_marker-1067965" />
+		</entry>
+		<entry keyword="DPH1">
+			<functionSummary>
+				<name>DPH1</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on DPH1" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651216_marker-1067965" />
+		</entry>
+		<entry keyword="TCON">
+			<functionSummary>
+				<name>TCON</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on TCON" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651218_marker-1105909" />
+		</entry>
+		<entry keyword="TMOD">
+			<functionSummary>
+				<name>TMOD</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on TMOD" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651218_marker-1105904" />
+		</entry>
+		<entry keyword="TL0">
+			<functionSummary>
+				<name>TL0</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on TL0" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651218_marker-1105829" />
+		</entry>
+		<entry keyword="TL1">
+			<functionSummary>
+				<name>TL1</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on TL1" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651218_marker-1105832" />
+		</entry>
+		<entry keyword="TH0">
+			<functionSummary>
+				<name>TH0</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on TH0" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651218_marker-1105830" />
+		</entry>
+		<entry keyword="TH1">
+			<functionSummary>
+				<name>TH1</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on TH1" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651218_marker-1105833" />
+		</entry>
+		<entry keyword="CKCON">
+			<functionSummary>
+				<name>CKCON</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on CKCON" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651218_marker-1106694" />
+		</entry>
+		<entry keyword="AUTODAT1">
+			<functionSummary>
+				<name>AUTODAT1</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on AUTODAT1" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651219_marker-1368635 " />
+		</entry>
+		<entry keyword="AUTOPTRH2">
+			<functionSummary>
+				<name>AUTOPTRH2</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on AUTOPTRH2" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651212_marker-1059831" />
+		</entry>
+		<entry keyword="AUTOPTRL2">
+			<functionSummary>
+				<name>AUTOPTRL2</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on AUTOPTRL2" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651212_marker-1059831 " />
+		</entry>
+		<entry keyword="AUTODAT2">
+			<functionSummary>
+				<name>AUTODAT2</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on AUTODAT2" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651219_marker-1368635" />
+		</entry>
+		<entry keyword="IBNIE">
+			<functionSummary>
+				<name>IBNIE</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on IBNIE" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651219_marker-1368494" />
+		</entry>
+		<entry keyword="IBNIRG">
+			<functionSummary>
+				<name>IBNIRG</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on IBNIRG" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651219_marker-1368495" />
+		</entry>
+		<entry keyword="IFCLK">
+			<functionSummary>
+				<name>IFCLK</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on IFCLK" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651213_marker-1141875" />
+		</entry>
+		<entry keyword="IFCONFIG">
+			<functionSummary>
+				<name>IFCONFIG</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on IFCONFIG" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651219_marker-1368262" />
+		</entry>
+		<entry keyword="INPKTEND">
+			<functionSummary>
+				<name>INPKTEND</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on INPKTEND" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651219_marker-1368478" />
+		</entry>
+		<entry keyword="OEA">
+			<functionSummary>
+				<name>OEA</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on OEA" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651217_OEx" />
+		</entry>
+		<entry keyword="OEB">
+			<functionSummary>
+				<name>OEB</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on OEB" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651217_OEx" />
+		</entry>
+		<entry keyword="OEC">
+			<functionSummary>
+				<name>OEC</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on OEC" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651217_OEx" />
+		</entry>
+		<entry keyword="OED">
+			<functionSummary>
+				<name>OED</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on OED" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651217_OEx" />
+		</entry>
+		<entry keyword="OEE">
+			<functionSummary>
+				<name>OEE</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on OEE" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651217_OEx" />
+		</entry>
+		<entry keyword="EP01STAT">
+			<functionSummary>
+				<name>EP01STAT</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on EP01STAT" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651212_marker-1059786" />
+		</entry>
+		<entry keyword="GPIFTRIG">
+			<functionSummary>
+				<name>GPIFTRIG</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on GPIFTRIG" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651219_marker-1368927" />
+		</entry>
+		<entry keyword="GPIFSGLDATH">
+			<functionSummary>
+				<name>GPIFSGLDATH</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on GPIFSGLDATH" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651219_marker-1368928" />
+		</entry>
+		<entry keyword="GPIFSGLDATLX">
+			<functionSummary>
+				<name>GPIFSGLDATLX</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on GPIFSGLDATLX"
+				href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651219_marker-1368929" />
+		</entry>
+		<entry keyword="GPIFSGLDATLNOX">
+			<functionSummary>
+				<name>GPIFSGLDATLNOX</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on GPIFSGLDATLNOX"
+				href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651219_marker-1368930" />
+		</entry>
+		<entry keyword="SCON0">
+			<functionSummary>
+				<name>SCON0</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on SCON0" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651218_marker-1133194" />
+		</entry>
+		<entry keyword="SCON1">
+			<functionSummary>
+				<name>SCON1</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on SCON1" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651218_marker-1133205" />
+		</entry>
+		<entry keyword="SBUF0">
+			<functionSummary>
+				<name>SBUF0</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on SBUF0" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651218_marker-1133199" />
+		</entry>
+		<entry keyword="SBUF1">
+			<functionSummary>
+				<name>SBUF1</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on SBUF1" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651218_marker-1133210" />
+		</entry>
+		<entry keyword="T2CON">
+			<functionSummary>
+				<name>T2CON</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on T2CON" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651218_marker-1106729" />
+		</entry>
+		<entry keyword="RCAP2L">
+			<functionSummary>
+				<name>RCAP2L</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on RCAP2L" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651218_marker-1106734" />
+		</entry>
+		<entry keyword="RCAP2H">
+			<functionSummary>
+				<name>RCAP2H</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on RCAP2H" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651218_marker-1106736" />
+		</entry>
+		<entry keyword="NAKIE">
+			<functionSummary>
+				<name>NAKIE</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on NAKIE" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651219_marker-1368496" />
+		</entry>
+		<entry keyword="NAKIRQ">
+			<functionSummary>
+				<name>NAKIRQ</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on NAKIRQ" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651219_marker-1368497" />
+		</entry>
+		<entry keyword="OUTPKTEND">
+			<functionSummary>
+				<name>OUTPKTEND</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on OUTPKTEND" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651219_marker-1368479" />
+		</entry>
+		<entry keyword="PORTECFG">
+			<functionSummary>
+				<name>PORTECFG</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on PORTECFG" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651219_marker-1368511" />
+		</entry>
+		<entry keyword="PORTCCFG">
+			<functionSummary>
+				<name>PORTCCFG</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on PORTCCFG" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651219_marker-1368510" />
+		</entry>
+		<entry keyword="PORTACFG">
+			<functionSummary>
+				<name>PORTACFG</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on PORTACFG" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651219_marker-1368509" />
+		</entry>
+		<entry keyword="PINFLAGS">
+			<functionSummary>
+				<name>PINFLAGS</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on PINFLAGS" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651219_marker-1368264" />
+		</entry>
+		<entry keyword="REVID">
+			<functionSummary>
+				<name>REVID</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on REVID" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651219_marker-1368277" />
+		</entry>
+		<entry keyword="REVCTL">
+			<functionSummary>
+				<name>REVCTL</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on REVCTL" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651219_marker-1368279" />
+		</entry>
+		<entry keyword="INTSETUP">
+			<functionSummary>
+				<name>INTSETUP</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on INTSETUP" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651219_marker-1368508" />
+		</entry>
+		<entry keyword="EP0ACK">
+			<functionSummary>
+				<name>EP0ACK</name>
+			</functionSummary>
+			<topic title="Read Register Documentation on EP0ACK" href="com.cypress.fx2lp.doc/htmls/FX2LP TRM/EZ-USB_TRM.htm#50651208_marker-1056654" />
+		</entry>
+	</helpBook>
+</documentation>

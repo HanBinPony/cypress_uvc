@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documentation>
+<helpBook title="Cypress Context Help" type="HELP_TYPE_C">
+<entry keyword="CyU3PUsbHostIsStarted">
+<functionSummary>
+<name>CyU3PUsbHostIsStarted</name>
+<description>
+This function returns whether the USB host module has been started.
+</description>
+<include>
+cyu3usbhost.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyBool_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbHostIsStarted" href="com.cypress.fx3.doc/html/cyu3usbhost_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbHostStart">
+<functionSummary>
+<name>CyU3PUsbHostStart</name>
+<description>
+This function initializes the USB 2.0 host stack.
+</description>
+<include>
+cyu3usbhost.h</include>
+<arguments>
+(CyU3PUsbHostConfig_t *hostCfg)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbHostStart" href="com.cypress.fx3.doc/html/cyu3usbhost_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbHostStop">
+<functionSummary>
+<name>CyU3PUsbHostStop</name>
+<description>
+This function de-inits the USB host stack.
+</description>
+<include>
+cyu3usbhost.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbHostStop" href="com.cypress.fx3.doc/html/cyu3usbhost_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbHostPortEnable">
+<functionSummary>
+<name>CyU3PUsbHostPortEnable</name>
+<description>
+This function enables the USB host port.
+</description>
+<include>
+cyu3usbhost.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbHostPortEnable" href="com.cypress.fx3.doc/html/cyu3usbhost_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbHostPortDisable">
+<functionSummary>
+<name>CyU3PUsbHostPortDisable</name>
+<description>
+Disable the USB host port.
+</description>
+<include>
+cyu3usbhost.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbHostPortDisable" href="com.cypress.fx3.doc/html/cyu3usbhost_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbHostGetPortStatus">
+<functionSummary>
+<name>CyU3PUsbHostGetPortStatus</name>
+<description>
+This function retreives the current port status.
+</description>
+<include>
+cyu3usbhost.h</include>
+<arguments>
+(CyU3PUsbHostPortStatus_t *portStatus, CyU3PUsbHostOpSpeed_t *portSpeed)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbHostGetPortStatus" href="com.cypress.fx3.doc/html/cyu3usbhost_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbHostPortReset">
+<functionSummary>
+<name>CyU3PUsbHostPortReset</name>
+<description>
+This function resets the USB host port.
+</description>
+<include>
+cyu3usbhost.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbHostPortReset" href="com.cypress.fx3.doc/html/cyu3usbhost_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbHostPortSuspend">
+<functionSummary>
+<name>CyU3PUsbHostPortSuspend</name>
+<description>
+This function suspends the USB host port.
+</description>
+<include>
+cyu3usbhost.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbHostPortSuspend" href="com.cypress.fx3.doc/html/cyu3usbhost_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbHostPortResume">
+<functionSummary>
+<name>CyU3PUsbHostPortResume</name>
+<description>
+This function resusmes the previously suspended USB host port.
+</description>
+<include>
+cyu3usbhost.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbHostPortResume" href="com.cypress.fx3.doc/html/cyu3usbhost_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbHostGetFrameNumber">
+<functionSummary>
+<name>CyU3PUsbHostGetFrameNumber</name>
+<description>
+This function gets the current frame number to be used.
+</description>
+<include>
+cyu3usbhost.h</include>
+<arguments>
+(uint32_t *frameNumber)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbHostGetFrameNumber" href="com.cypress.fx3.doc/html/cyu3usbhost_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbHostGetDeviceAddress">
+<functionSummary>
+<name>CyU3PUsbHostGetDeviceAddress</name>
+<description>
+This function gets the current downstream peripheral address.
+</description>
+<include>
+cyu3usbhost.h</include>
+<arguments>
+(uint8_t *devAddr)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbHostGetDeviceAddress" href="com.cypress.fx3.doc/html/cyu3usbhost_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbHostSetDeviceAddress">
+<functionSummary>
+<name>CyU3PUsbHostSetDeviceAddress</name>
+<description>
+This function sets the current downstream peripheral address.
+</description>
+<include>
+cyu3usbhost.h</include>
+<arguments>
+(uint8_t devAddr)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbHostSetDeviceAddress" href="com.cypress.fx3.doc/html/cyu3usbhost_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbHostEpAdd">
+<functionSummary>
+<name>CyU3PUsbHostEpAdd</name>
+<description>
+This function adds an endpoint to the scheduler.
+</description>
+<include>
+cyu3usbhost.h</include>
+<arguments>
+(uint8_t ep, CyU3PUsbHostEpConfig_t *cfg)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbHostEpAdd" href="com.cypress.fx3.doc/html/cyu3usbhost_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbHostEpRemove">
+<functionSummary>
+<name>CyU3PUsbHostEpRemove</name>
+<description>
+This function removes and endpoint from the scheduler.
+</description>
+<include>
+cyu3usbhost.h</include>
+<arguments>
+(uint8_t ep)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbHostEpRemove" href="com.cypress.fx3.doc/html/cyu3usbhost_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbHostEpReset">
+<functionSummary>
+<name>CyU3PUsbHostEpReset</name>
+<description>
+This function resets an endpoint state.
+</description>
+<include>
+cyu3usbhost.h</include>
+<arguments>
+(uint8_t ep)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbHostEpReset" href="com.cypress.fx3.doc/html/cyu3usbhost_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbHostSendSetupRqt">
+<functionSummary>
+<name>CyU3PUsbHostSendSetupRqt</name>
+<description>
+This function does EP0 setup transfer handling.
+</description>
+<include>
+cyu3usbhost.h</include>
+<arguments>
+(uint8_t *setupPkt, uint8_t *buf_p)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbHostSendSetupRqt" href="com.cypress.fx3.doc/html/cyu3usbhost_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbHostEpSetXfer">
+<functionSummary>
+<name>CyU3PUsbHostEpSetXfer</name>
+<description>
+This function starts a transfer for all non-EP0 endpoints and sets the transfer parameters for EP0. This function is relavant for EP0 only if the ep0LowLevelControl is set to CyTrue while starting the host stack. If the API is invoked for EP0 when the ep0LowLevelControl is CyFalse, then the behaviour is undefined as this API will be used by the library for setting up the EP0 transfers.
+</description>
+<include>
+cyu3usbhost.h</include>
+<arguments>
+(uint8_t ep, CyU3PUsbHostEpXferType_t type, uint32_t count)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbHostEpSetXfer" href="com.cypress.fx3.doc/html/cyu3usbhost_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbHostEp0BeginXfer">
+<functionSummary>
+<name>CyU3PUsbHostEp0BeginXfer</name>
+<description>
+This function enables and starts transfer on EP0. The function is relavant only if the ep0LowLevelControl is set to CyTrue while starting the host stack. If the API is invoked for EP0 when the ep0LowLevelControl is CyFalse, then the behaviour is undefined as this API will be used by the library for setting up the EP0 transfers.
+</description>
+<include>
+cyu3usbhost.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbHostEp0BeginXfer" href="com.cypress.fx3.doc/html/cyu3usbhost_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbHostEpAbort">
+<functionSummary>
+<name>CyU3PUsbHostEpAbort</name>
+<description>
+This function aborts pending transfers on selected endpoint.
+</description>
+<include>
+cyu3usbhost.h</include>
+<arguments>
+(uint8_t ep)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbHostEpAbort" href="com.cypress.fx3.doc/html/cyu3usbhost_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbHostEpWaitForCompletion">
+<functionSummary>
+<name>CyU3PUsbHostEpWaitForCompletion</name>
+<description>
+This function waits for the current endpoint transfer to complete.
+</description>
+<include>
+cyu3usbhost.h</include>
+<arguments>
+(uint8_t ep, CyU3PUsbHostEpStatus_t *epStatus, uint32_t waitOption)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbHostEpWaitForCompletion" href="com.cypress.fx3.doc/html/cyu3usbhost_8h.html#func-members"/></entry>
+</helpBook>
+</documentation>

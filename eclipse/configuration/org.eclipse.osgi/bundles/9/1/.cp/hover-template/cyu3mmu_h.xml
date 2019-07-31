@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documentation>
+<helpBook title="Cypress Context Help" type="HELP_TYPE_C">
+<entry keyword="CyU3PSysDisableICache">
+<functionSummary>
+<name>CyU3PSysDisableICache</name>
+<description>
+Disable the instruction cache.
+</description>
+<include>
+cyu3mmu.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSysDisableICache" href="com.cypress.fx3.doc/html/cyu3mmu_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSysDisableDCache">
+<functionSummary>
+<name>CyU3PSysDisableDCache</name>
+<description>
+Disable the data cache.
+</description>
+<include>
+cyu3mmu.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSysDisableDCache" href="com.cypress.fx3.doc/html/cyu3mmu_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSysDisableMMU">
+<functionSummary>
+<name>CyU3PSysDisableMMU</name>
+<description>
+Disable the MMU.
+</description>
+<include>
+cyu3mmu.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSysDisableMMU" href="com.cypress.fx3.doc/html/cyu3mmu_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSysDisableCacheMMU">
+<functionSummary>
+<name>CyU3PSysDisableCacheMMU</name>
+<description>
+Disable the caches and MMU.
+</description>
+<include>
+cyu3mmu.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSysDisableCacheMMU" href="com.cypress.fx3.doc/html/cyu3mmu_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSysEnableICache">
+<functionSummary>
+<name>CyU3PSysEnableICache</name>
+<description>
+Enable the instruction cache.
+</description>
+<include>
+cyu3mmu.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSysEnableICache" href="com.cypress.fx3.doc/html/cyu3mmu_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSysEnableDCache">
+<functionSummary>
+<name>CyU3PSysEnableDCache</name>
+<description>
+Enable the Data Cache.
+</description>
+<include>
+cyu3mmu.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSysEnableDCache" href="com.cypress.fx3.doc/html/cyu3mmu_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSysEnableMMU">
+<functionSummary>
+<name>CyU3PSysEnableMMU</name>
+<description>
+Enable the MMU.
+</description>
+<include>
+cyu3mmu.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSysEnableMMU" href="com.cypress.fx3.doc/html/cyu3mmu_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSysEnableCacheMMU">
+<functionSummary>
+<name>CyU3PSysEnableCacheMMU</name>
+<description>
+Enable the Caches and the MMU.
+</description>
+<include>
+cyu3mmu.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSysEnableCacheMMU" href="com.cypress.fx3.doc/html/cyu3mmu_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSysFlushCaches">
+<functionSummary>
+<name>CyU3PSysFlushCaches</name>
+<description>
+Flush both I and D Caches.
+</description>
+<include>
+cyu3mmu.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSysFlushCaches" href="com.cypress.fx3.doc/html/cyu3mmu_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSysFlushICache">
+<functionSummary>
+<name>CyU3PSysFlushICache</name>
+<description>
+Flush the I-Cache.
+</description>
+<include>
+cyu3mmu.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSysFlushICache" href="com.cypress.fx3.doc/html/cyu3mmu_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSysFlushDCache">
+<functionSummary>
+<name>CyU3PSysFlushDCache</name>
+<description>
+Flush the D-Cache.
+</description>
+<include>
+cyu3mmu.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSysFlushDCache" href="com.cypress.fx3.doc/html/cyu3mmu_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSysCleanDCache">
+<functionSummary>
+<name>CyU3PSysCleanDCache</name>
+<description>
+Clean the entire D-Cache.
+</description>
+<include>
+cyu3mmu.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSysCleanDCache" href="com.cypress.fx3.doc/html/cyu3mmu_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSysClearDCache">
+<functionSummary>
+<name>CyU3PSysClearDCache</name>
+<description>
+Clean and Flush the entire D-Cache.
+</description>
+<include>
+cyu3mmu.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSysClearDCache" href="com.cypress.fx3.doc/html/cyu3mmu_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSysFlushIRegion">
+<functionSummary>
+<name>CyU3PSysFlushIRegion</name>
+<description>
+Flush a code region from the I-Cache.
+</description>
+<include>
+cyu3mmu.h</include>
+<arguments>
+(uint32_t *addr, uint32_t len)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSysFlushIRegion" href="com.cypress.fx3.doc/html/cyu3mmu_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSysFlushDRegion">
+<functionSummary>
+<name>CyU3PSysFlushDRegion</name>
+<description>
+Flush a data region from the D-Cache.
+</description>
+<include>
+cyu3mmu.h</include>
+<arguments>
+(uint32_t *addr, uint32_t len)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSysFlushDRegion" href="com.cypress.fx3.doc/html/cyu3mmu_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSysCleanDRegion">
+<functionSummary>
+<name>CyU3PSysCleanDRegion</name>
+<description>
+Clean a data region from the D-Cache.
+</description>
+<include>
+cyu3mmu.h</include>
+<arguments>
+(uint32_t *addr, uint32_t len)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSysCleanDRegion" href="com.cypress.fx3.doc/html/cyu3mmu_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSysClearDRegion">
+<functionSummary>
+<name>CyU3PSysClearDRegion</name>
+<description>
+Clean and flush a data region from the D-Cache.
+</description>
+<include>
+cyu3mmu.h</include>
+<arguments>
+(uint32_t *addr, uint32_t len)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSysClearDRegion" href="com.cypress.fx3.doc/html/cyu3mmu_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSysBarrierSync">
+<functionSummary>
+<name>CyU3PSysBarrierSync</name>
+<description>
+Memory barrier synchronization function.
+</description>
+<include>
+cyu3mmu.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSysBarrierSync" href="com.cypress.fx3.doc/html/cyu3mmu_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSysCacheIRegion">
+<functionSummary>
+<name>CyU3PSysCacheIRegion</name>
+<description>
+Function to lock a code region into the I-Cache.
+</description>
+<include>
+cyu3mmu.h</include>
+<arguments>
+(uint32_t *addr, uint32_t len)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSysCacheIRegion" href="com.cypress.fx3.doc/html/cyu3mmu_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSysCacheDRegion">
+<functionSummary>
+<name>CyU3PSysCacheDRegion</name>
+<description>
+Function to lock a data region into the D-Cache.
+</description>
+<include>
+cyu3mmu.h</include>
+<arguments>
+(uint32_t *addr, uint32_t len)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSysCacheDRegion" href="com.cypress.fx3.doc/html/cyu3mmu_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSysInitTCMs">
+<functionSummary>
+<name>CyU3PSysInitTCMs</name>
+<description>
+Function to initialize the TCM regions.
+</description>
+<include>
+cyu3mmu.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSysInitTCMs" href="com.cypress.fx3.doc/html/cyu3mmu_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PInitPageTable">
+<functionSummary>
+<name>CyU3PInitPageTable</name>
+<description>
+Function to create the page tables for the device memory map.
+</description>
+<include>
+cyu3mmu.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PInitPageTable" href="com.cypress.fx3.doc/html/cyu3mmu_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSysLockTLBEntry">
+<functionSummary>
+<name>CyU3PSysLockTLBEntry</name>
+<description>
+Function to lock the TLB entry for a page walk.
+</description>
+<include>
+cyu3mmu.h</include>
+<arguments>
+(uint32_t *addr)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSysLockTLBEntry" href="com.cypress.fx3.doc/html/cyu3mmu_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSysFlushTLBEntry">
+<functionSummary>
+<name>CyU3PSysFlushTLBEntry</name>
+<description>
+Invalidate the TLB entry corresponding to a specified MVA.
+</description>
+<include>
+cyu3mmu.h</include>
+<arguments>
+(uint32_t *addr)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSysFlushTLBEntry" href="com.cypress.fx3.doc/html/cyu3mmu_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSysLoadTLB">
+<functionSummary>
+<name>CyU3PSysLoadTLB</name>
+<description>
+Function to lock all valid page walks into TLB.
+</description>
+<include>
+cyu3mmu.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSysLoadTLB" href="com.cypress.fx3.doc/html/cyu3mmu_8h.html#func-members"/></entry>
+</helpBook>
+</documentation>

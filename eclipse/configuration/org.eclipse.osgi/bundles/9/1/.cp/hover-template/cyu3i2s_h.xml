@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documentation>
+<helpBook title="Cypress Context Help" type="HELP_TYPE_C">
+<entry keyword="CyU3PI2sInit">
+<functionSummary>
+<name>CyU3PI2sInit</name>
+<description>
+Starts the I2S interface block on the FX3.
+</description>
+<include>
+cyu3i2s.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PI2sInit" href="com.cypress.fx3.doc/html/cyu3i2s_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PI2sDeInit">
+<functionSummary>
+<name>CyU3PI2sDeInit</name>
+<description>
+Stops the I2S interface block on the FX3.
+</description>
+<include>
+cyu3i2s.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PI2sDeInit" href="com.cypress.fx3.doc/html/cyu3i2s_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PI2sSetConfig">
+<functionSummary>
+<name>CyU3PI2sSetConfig</name>
+<description>
+Sets the I2S interface parameters.
+</description>
+<include>
+cyu3i2s.h</include>
+<arguments>
+(CyU3PI2sConfig_t *config, CyU3PI2sIntrCb_t cb)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PI2sSetConfig" href="com.cypress.fx3.doc/html/cyu3i2s_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PI2sTransmitBytes">
+<functionSummary>
+<name>CyU3PI2sTransmitBytes</name>
+<description>
+Transmits data byte by byte over the I2S interface.
+</description>
+<include>
+cyu3i2s.h</include>
+<arguments>
+(uint8_t *lData, uint8_t *rData, uint8_t lByteCount, uint8_t rByteCount)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PI2sTransmitBytes" href="com.cypress.fx3.doc/html/cyu3i2s_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PI2sSetMute">
+<functionSummary>
+<name>CyU3PI2sSetMute</name>
+<description>
+Mute / Un-mute I2S master.
+</description>
+<include>
+cyu3i2s.h</include>
+<arguments>
+(CyBool_t isMute)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PI2sSetMute" href="com.cypress.fx3.doc/html/cyu3i2s_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PI2sSetPause">
+<functionSummary>
+<name>CyU3PI2sSetPause</name>
+<description>
+Pause / Resume I2S master.
+</description>
+<include>
+cyu3i2s.h</include>
+<arguments>
+(CyBool_t isPause)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PI2sSetPause" href="com.cypress.fx3.doc/html/cyu3i2s_8h.html#func-members"/></entry>
+</helpBook>
+</documentation>

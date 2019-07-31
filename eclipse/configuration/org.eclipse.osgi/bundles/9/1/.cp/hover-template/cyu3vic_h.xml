@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documentation>
+<helpBook title="Cypress Context Help" type="HELP_TYPE_C">
+<entry keyword="CyU3PVicEnableInt">
+<functionSummary>
+<name>CyU3PVicEnableInt</name>
+<description>
+Enable the interrupt for the specified vector number.
+</description>
+<include>
+cyu3vic.h</include>
+<arguments>
+(uint32_t vectorNum)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PVicEnableInt" href="com.cypress.fx3.doc/html/cyu3vic_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PVicDisableInt">
+<functionSummary>
+<name>CyU3PVicDisableInt</name>
+<description>
+Disable the interrupt for the specified vector number.
+</description>
+<include>
+cyu3vic.h</include>
+<arguments>
+(uint32_t vectorNum)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PVicDisableInt" href="com.cypress.fx3.doc/html/cyu3vic_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PVicClearInt">
+<functionSummary>
+<name>CyU3PVicClearInt</name>
+<description>
+Clear any interrupt that has occurred.
+</description>
+<include>
+cyu3vic.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PVicClearInt" href="com.cypress.fx3.doc/html/cyu3vic_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PVicIntGetStatus">
+<functionSummary>
+<name>CyU3PVicIntGetStatus</name>
+<description>
+Get the raw interrupt status.
+</description>
+<include>
+cyu3vic.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PVicIntGetStatus" href="com.cypress.fx3.doc/html/cyu3vic_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PVicIRQGetStatus">
+<functionSummary>
+<name>CyU3PVicIRQGetStatus</name>
+<description>
+Get the IRQ interrupt status.
+</description>
+<include>
+cyu3vic.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PVicIRQGetStatus" href="com.cypress.fx3.doc/html/cyu3vic_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PVicFIQGetStatus">
+<functionSummary>
+<name>CyU3PVicFIQGetStatus</name>
+<description>
+Get the FIQ interrupt status.
+</description>
+<include>
+cyu3vic.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PVicFIQGetStatus" href="com.cypress.fx3.doc/html/cyu3vic_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PVicIntSetPriority">
+<functionSummary>
+<name>CyU3PVicIntSetPriority</name>
+<description>
+Set the priority level of the interrupt vector.
+</description>
+<include>
+cyu3vic.h</include>
+<arguments>
+(uint32_t vectorNum, uint32_t priority)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PVicIntSetPriority" href="com.cypress.fx3.doc/html/cyu3vic_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PVicIntGetPriority">
+<functionSummary>
+<name>CyU3PVicIntGetPriority</name>
+<description>
+Get the priority level of the interrupt vector.
+</description>
+<include>
+cyu3vic.h</include>
+<arguments>
+(uint32_t vectorNum)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PVicIntGetPriority" href="com.cypress.fx3.doc/html/cyu3vic_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PVicIntSetPrioriryMask">
+<functionSummary>
+<name>CyU3PVicIntSetPrioriryMask</name>
+<description>
+Set the priority level mask.
+</description>
+<include>
+cyu3vic.h</include>
+<arguments>
+(uint32_t priorityMask)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PVicIntSetPrioriryMask" href="com.cypress.fx3.doc/html/cyu3vic_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PVicIntGetPrioriryMask">
+<functionSummary>
+<name>CyU3PVicIntGetPrioriryMask</name>
+<description>
+Get the priority level mask.
+</description>
+<include>
+cyu3vic.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PVicIntGetPrioriryMask" href="com.cypress.fx3.doc/html/cyu3vic_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PVicInit">
+<functionSummary>
+<name>CyU3PVicInit</name>
+<description>
+The function initializes the VIC.
+</description>
+<include>
+cyu3vic.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PVicInit" href="com.cypress.fx3.doc/html/cyu3vic_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PVicSetupIntVectors">
+<functionSummary>
+<name>CyU3PVicSetupIntVectors</name>
+<description>
+The function initializes the interrupt vector table.
+</description>
+<include>
+cyu3vic.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PVicSetupIntVectors" href="com.cypress.fx3.doc/html/cyu3vic_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PVicDisableAllInterrupts">
+<functionSummary>
+<name>CyU3PVicDisableAllInterrupts</name>
+<description>
+This function disables all FX3 interrupts at the VIC level.
+</description>
+<include>
+cyu3vic.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PVicDisableAllInterrupts" href="com.cypress.fx3.doc/html/cyu3vic_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PVicEnableInterrupts">
+<functionSummary>
+<name>CyU3PVicEnableInterrupts</name>
+<description>
+This function enables the specified interrupts at the VIC level.
+</description>
+<include>
+cyu3vic.h</include>
+<arguments>
+(uint32_t mask)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PVicEnableInterrupts" href="com.cypress.fx3.doc/html/cyu3vic_8h.html#func-members"/></entry>
+</helpBook>
+</documentation>

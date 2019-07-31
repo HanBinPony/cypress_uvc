@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documentation>
+<helpBook title="Cypress Context Help" type="HELP_TYPE_C">
+<entry keyword="_tx_thread_context_save">
+<functionSummary>
+<name>_tx_thread_context_save</name>
+<description>
+llowing are the forward declarations as they are not defined in the Compound.impl.DocRefTextTypeImpl@3313beb5 (mixed: [ecore.xml.type:text=tx_api.h], external: null, kindref: compound, refid: tx__api_8h).
+</description>
+<include>
+cyu3tx.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on _tx_thread_context_save" href="com.cypress.fx3.doc/html/cyu3tx_8h.html#func-members"/></entry>
+
+<entry keyword="_tx_thread_vectored_context_save">
+<functionSummary>
+<name>_tx_thread_vectored_context_save</name>
+<description>
+This function saves the thread context when entering the IRQ context. This function should be used if the device uses a VIC and has vectored interrupt handlers.
+</description>
+<include>
+cyu3tx.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on _tx_thread_vectored_context_save" href="com.cypress.fx3.doc/html/cyu3tx_8h.html#func-members"/></entry>
+
+<entry keyword="_tx_thread_context_restore">
+<functionSummary>
+<name>_tx_thread_context_restore</name>
+<description>
+This function restores the thread context after handling an IRQ interrupt. This function shall be used for devices with and without VIC.
+</description>
+<include>
+cyu3tx.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on _tx_thread_context_restore" href="com.cypress.fx3.doc/html/cyu3tx_8h.html#func-members"/></entry>
+
+<entry keyword="_tx_fiq_context_save">
+<functionSummary>
+<name>_tx_fiq_context_save</name>
+<description>
+This function saves the thread context when entering the FIQ context. This function shall be used for devices with and without VIC.
+</description>
+<include>
+cyu3tx.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on _tx_fiq_context_save" href="com.cypress.fx3.doc/html/cyu3tx_8h.html#func-members"/></entry>
+
+<entry keyword="_tx_fiq_context_restore">
+<functionSummary>
+<name>_tx_fiq_context_restore</name>
+<description>
+This function restores the thread context after handling an FIQ interrupt. This function shall be used for devices with and without VIC.
+</description>
+<include>
+cyu3tx.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on _tx_fiq_context_restore" href="com.cypress.fx3.doc/html/cyu3tx_8h.html#func-members"/></entry>
+
+<entry keyword="_tx_timer_interrupt">
+<functionSummary>
+<name>_tx_timer_interrupt</name>
+<description>
+This function is the OS timer interrupt handler.
+</description>
+<include>
+cyu3tx.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on _tx_timer_interrupt" href="com.cypress.fx3.doc/html/cyu3tx_8h.html#func-members"/></entry>
+</helpBook>
+</documentation>

@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documentation>
+<helpBook title="Cypress Context Help" type="HELP_TYPE_C">
+<entry keyword="CyU3PFirmwareEntry">
+<functionSummary>
+<name>CyU3PFirmwareEntry</name>
+<description>
+This is the entry routine for the firmware.
+</description>
+<include>
+cyu3system.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PFirmwareEntry" href="com.cypress.fx3.doc/html/cyu3system_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PToolChainInit">
+<functionSummary>
+<name>CyU3PToolChainInit</name>
+<description>
+This is the normal entry routine provided by the tool-chain.
+</description>
+<include>
+cyu3system.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PToolChainInit" href="com.cypress.fx3.doc/html/cyu3system_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDeviceInit">
+<functionSummary>
+<name>CyU3PDeviceInit</name>
+<description>
+This function initializes the device.
+</description>
+<include>
+cyu3system.h</include>
+<arguments>
+(CyU3PSysClockConfig_t *clkCfg)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDeviceInit" href="com.cypress.fx3.doc/html/cyu3system_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDeviceCacheControl">
+<functionSummary>
+<name>CyU3PDeviceCacheControl</name>
+<description>
+This function initializes the CPU caches.
+</description>
+<include>
+cyu3system.h</include>
+<arguments>
+(CyBool_t isICacheEnable, CyBool_t isDCacheEnable, CyBool_t isDmaHandleDCache)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDeviceCacheControl" href="com.cypress.fx3.doc/html/cyu3system_8h.html#func-members"/></entry>
+
+<entry keyword="CyFxApplicationDefine">
+<functionSummary>
+<name>CyFxApplicationDefine</name>
+<description>
+This is the FX3 application definition function.
+</description>
+<include>
+cyu3system.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyFxApplicationDefine" href="com.cypress.fx3.doc/html/cyu3system_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSysGetApiVersion">
+<functionSummary>
+<name>CyU3PSysGetApiVersion</name>
+<description>
+This function returns the API version.
+</description>
+<include>
+cyu3system.h</include>
+<arguments>
+(uint16_t *majorVersion, uint16_t *minorVersion, uint16_t *patchNumer, uint16_t *buildNumer)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSysGetApiVersion" href="com.cypress.fx3.doc/html/cyu3system_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDeviceGetSysClkFreq">
+<functionSummary>
+<name>CyU3PDeviceGetSysClkFreq</name>
+<description>
+This function returns the current SYS_CLK frequency.
+</description>
+<include>
+cyu3system.h</include>
+<arguments>
+(uint32_t *freq)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDeviceGetSysClkFreq" href="com.cypress.fx3.doc/html/cyu3system_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDeviceReset">
+<functionSummary>
+<name>CyU3PDeviceReset</name>
+<description>
+This function resets the FX3 device.
+</description>
+<include>
+cyu3system.h</include>
+<arguments>
+(CyBool_t isWarmReset)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDeviceReset" href="com.cypress.fx3.doc/html/cyu3system_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSysEnterStandby">
+<functionSummary>
+<name>CyU3PSysEnterStandby</name>
+<description>
+Puts the device to the low power state.
+</description>
+<include>
+cyu3system.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSysEnterStandby" href="com.cypress.fx3.doc/html/cyu3system_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSysEnterSuspendMode">
+<functionSummary>
+<name>CyU3PSysEnterSuspendMode</name>
+<description>
+Puts the device to the low power state.
+</description>
+<include>
+cyu3system.h</include>
+<arguments>
+(uint16_t wakeupFlags, uint16_t polarity, uint16_t *wakeupSource)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSysEnterSuspendMode" href="com.cypress.fx3.doc/html/cyu3system_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSysWatchDogConfigure">
+<functionSummary>
+<name>CyU3PSysWatchDogConfigure</name>
+<description>
+Configure the watchdog reset control.
+</description>
+<include>
+cyu3system.h</include>
+<arguments>
+(CyBool_t enable, uint32_t period)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSysWatchDogConfigure" href="com.cypress.fx3.doc/html/cyu3system_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSysWatchDogClear">
+<functionSummary>
+<name>CyU3PSysWatchDogClear</name>
+<description>
+Clear the watchdog timer to prevent a device reset.
+</description>
+<include>
+cyu3system.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSysWatchDogClear" href="com.cypress.fx3.doc/html/cyu3system_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDeviceConfigureIOMatrix">
+<functionSummary>
+<name>CyU3PDeviceConfigureIOMatrix</name>
+<description>
+Configures the IO matrix for the device.
+</description>
+<include>
+cyu3system.h</include>
+<arguments>
+(CyU3PIoMatrixConfig_t *cfg_p)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDeviceConfigureIOMatrix" href="com.cypress.fx3.doc/html/cyu3system_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDeviceGpioOverride">
+<functionSummary>
+<name>CyU3PDeviceGpioOverride</name>
+<description>
+This function is used to override an IO as a GPIO.
+</description>
+<include>
+cyu3system.h</include>
+<arguments>
+(uint8_t gpioId, CyBool_t isSimple)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDeviceGpioOverride" href="com.cypress.fx3.doc/html/cyu3system_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDeviceGpioRestore">
+<functionSummary>
+<name>CyU3PDeviceGpioRestore</name>
+<description>
+This function is used to restore IO to normal mode.
+</description>
+<include>
+cyu3system.h</include>
+<arguments>
+(uint8_t gpioId)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDeviceGpioRestore" href="com.cypress.fx3.doc/html/cyu3system_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSetSerialIoDriveStrength">
+<functionSummary>
+<name>CyU3PSetSerialIoDriveStrength</name>
+<description>
+Set the IO drive strength for UART, SPI and I2S interfaces.
+</description>
+<include>
+cyu3system.h</include>
+<arguments>
+(CyU3PDriveStrengthState_t driveStrength)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSetSerialIoDriveStrength" href="com.cypress.fx3.doc/html/cyu3system_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDebugInit">
+<functionSummary>
+<name>CyU3PDebugInit</name>
+<description>
+Initialize the firmware logging functionality.
+</description>
+<include>
+cyu3system.h</include>
+<arguments>
+(CyU3PDmaSocketId_t destSckId, uint8_t traceLevel)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDebugInit" href="com.cypress.fx3.doc/html/cyu3system_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDebugDeInit">
+<functionSummary>
+<name>CyU3PDebugDeInit</name>
+<description>
+De-initialize the logging function.
+</description>
+<include>
+cyu3system.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDebugDeInit" href="com.cypress.fx3.doc/html/cyu3system_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDebugSysMemInit">
+<functionSummary>
+<name>CyU3PDebugSysMemInit</name>
+<description>
+Initializes the SYS_MEM based logger facility.
+</description>
+<include>
+cyu3system.h</include>
+<arguments>
+(uint8_t *buffer, uint16_t size, CyBool_t isWrapAround, uint8_t traceLevel)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDebugSysMemInit" href="com.cypress.fx3.doc/html/cyu3system_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDebugSysMemDeInit">
+<functionSummary>
+<name>CyU3PDebugSysMemDeInit</name>
+<description>
+Disables the SYS_MEM logger.
+</description>
+<include>
+cyu3system.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDebugSysMemDeInit" href="com.cypress.fx3.doc/html/cyu3system_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDebugPreamble">
+<functionSummary>
+<name>CyU3PDebugPreamble</name>
+<description>
+Inhibits the preamble bytes preceding the print message.
+</description>
+<include>
+cyu3system.h</include>
+<arguments>
+(CyBool_t sendPreamble)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDebugPreamble" href="com.cypress.fx3.doc/html/cyu3system_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDebugPrint">
+<functionSummary>
+<name>CyU3PDebugPrint</name>
+<description>
+Free form message logging function.
+</description>
+<include>
+cyu3system.h</include>
+<arguments>
+(uint8_t priority, char *message,...)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDebugPrint" href="com.cypress.fx3.doc/html/cyu3system_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDebugLog">
+<functionSummary>
+<name>CyU3PDebugLog</name>
+<description>
+Log a codified message.
+</description>
+<include>
+cyu3system.h</include>
+<arguments>
+(uint8_t priority, uint16_t message, uint32_t parameter)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDebugLog" href="com.cypress.fx3.doc/html/cyu3system_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDebugLogFlush">
+<functionSummary>
+<name>CyU3PDebugLogFlush</name>
+<description>
+Flush any pending logs out of the internal buffers.
+</description>
+<include>
+cyu3system.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDebugLogFlush" href="com.cypress.fx3.doc/html/cyu3system_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDebugLogClear">
+<functionSummary>
+<name>CyU3PDebugLogClear</name>
+<description>
+Drop any pending logs in the internal buffers.
+</description>
+<include>
+cyu3system.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDebugLogClear" href="com.cypress.fx3.doc/html/cyu3system_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDebugSetTraceLevel">
+<functionSummary>
+<name>CyU3PDebugSetTraceLevel</name>
+<description>
+This function sets the priority threshold above which debug traces will be logged.
+</description>
+<include>
+cyu3system.h</include>
+<arguments>
+(uint8_t level)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDebugSetTraceLevel" href="com.cypress.fx3.doc/html/cyu3system_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDebugEnable">
+<functionSummary>
+<name>CyU3PDebugEnable</name>
+<description>
+Enable log messages from specified threads.
+</description>
+<include>
+cyu3system.h</include>
+<arguments>
+(uint16_t threadMask)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDebugEnable" href="com.cypress.fx3.doc/html/cyu3system_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDebugDisable">
+<functionSummary>
+<name>CyU3PDebugDisable</name>
+<description>
+Disable log messages from all library threads.
+</description>
+<include>
+cyu3system.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+uint16_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDebugDisable" href="com.cypress.fx3.doc/html/cyu3system_8h.html#func-members"/></entry>
+</helpBook>
+</documentation>

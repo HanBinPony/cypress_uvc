@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documentation>
+<helpBook title="Cypress Context Help" type="HELP_TYPE_C">
+<entry keyword="CyU3PGpifLoad">
+<functionSummary>
+<name>CyU3PGpifLoad</name>
+<description>
+Function to program the user defined state machine into the GPIF registers.
+</description>
+<include>
+cyu3gpif.h</include>
+<arguments>
+(const CyU3PGpifConfig_t *conf)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PGpifLoad" href="com.cypress.fx3.doc/html/cyu3gpif_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PGpifRegisterCallback">
+<functionSummary>
+<name>CyU3PGpifRegisterCallback</name>
+<description>
+This function registers an event callback for the GPIF driver.
+</description>
+<include>
+cyu3gpif.h</include>
+<arguments>
+(CyU3PGpifEventCb_t cbFunc)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PGpifRegisterCallback" href="com.cypress.fx3.doc/html/cyu3gpif_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PGpifWaveformLoad">
+<functionSummary>
+<name>CyU3PGpifWaveformLoad</name>
+<description>
+Initialize the GPIF state machine table.
+</description>
+<include>
+cyu3gpif.h</include>
+<arguments>
+(uint8_t firstState, uint16_t stateCnt, uint8_t *stateDataMap, CyU3PGpifWaveData *transitionData)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PGpifWaveformLoad" href="com.cypress.fx3.doc/html/cyu3gpif_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PGpifConfigure">
+<functionSummary>
+<name>CyU3PGpifConfigure</name>
+<description>
+Initialize the GPIF configuration registers.
+</description>
+<include>
+cyu3gpif.h</include>
+<arguments>
+(uint8_t numRegs, const uint32_t *regData)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PGpifConfigure" href="com.cypress.fx3.doc/html/cyu3gpif_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PGpifRegisterConfig">
+<functionSummary>
+<name>CyU3PGpifRegisterConfig</name>
+<description>
+Initialize the GPIF configuration registers.
+</description>
+<include>
+cyu3gpif.h</include>
+<arguments>
+(uint16_t numRegs, uint32_t regData[][2])</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PGpifRegisterConfig" href="com.cypress.fx3.doc/html/cyu3gpif_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PGpifInitTransFunctions">
+<functionSummary>
+<name>CyU3PGpifInitTransFunctions</name>
+<description>
+Initialize the GPIF transition function registers.
+</description>
+<include>
+cyu3gpif.h</include>
+<arguments>
+(uint16_t *fnTable)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PGpifInitTransFunctions" href="com.cypress.fx3.doc/html/cyu3gpif_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PGpifDisable">
+<functionSummary>
+<name>CyU3PGpifDisable</name>
+<description>
+Disables the GPIF state machine and hardware.
+</description>
+<include>
+cyu3gpif.h</include>
+<arguments>
+(CyBool_t forceReload)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PGpifDisable" href="com.cypress.fx3.doc/html/cyu3gpif_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PGpifSMStart">
+<functionSummary>
+<name>CyU3PGpifSMStart</name>
+<description>
+Start the waveform state machine from the specified state.
+</description>
+<include>
+cyu3gpif.h</include>
+<arguments>
+(uint8_t stateIndex, uint8_t initialAlpha)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PGpifSMStart" href="com.cypress.fx3.doc/html/cyu3gpif_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PGpifSMSwitch">
+<functionSummary>
+<name>CyU3PGpifSMSwitch</name>
+<description>
+This function is used to start GPIF state machine execution from a desired state.
+</description>
+<include>
+cyu3gpif.h</include>
+<arguments>
+(uint16_t fromState, uint16_t toState, uint16_t endState, uint8_t initialAlpha, uint32_t switchTimeout)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PGpifSMSwitch" href="com.cypress.fx3.doc/html/cyu3gpif_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PGpifInitCtrlCounter">
+<functionSummary>
+<name>CyU3PGpifInitCtrlCounter</name>
+<description>
+Function to configure the GPIF control counter.
+</description>
+<include>
+cyu3gpif.h</include>
+<arguments>
+(uint16_t initValue, uint16_t limit, CyBool_t reload, CyBool_t upCount, uint8_t outputBit)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PGpifInitCtrlCounter" href="com.cypress.fx3.doc/html/cyu3gpif_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PGpifInitAddrCounter">
+<functionSummary>
+<name>CyU3PGpifInitAddrCounter</name>
+<description>
+Function to configure the GPIF address counter.
+</description>
+<include>
+cyu3gpif.h</include>
+<arguments>
+(uint32_t initValue, uint32_t limit, CyBool_t reload, CyBool_t upCount, uint8_t increment)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PGpifInitAddrCounter" href="com.cypress.fx3.doc/html/cyu3gpif_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PGpifInitDataCounter">
+<functionSummary>
+<name>CyU3PGpifInitDataCounter</name>
+<description>
+Function to configure the GPIF data counter.
+</description>
+<include>
+cyu3gpif.h</include>
+<arguments>
+(uint32_t initValue, uint32_t limit, CyBool_t reload, CyBool_t upCount, uint8_t increment)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PGpifInitDataCounter" href="com.cypress.fx3.doc/html/cyu3gpif_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PGpifInitComparator">
+<functionSummary>
+<name>CyU3PGpifInitComparator</name>
+<description>
+This function configures one of the comparators in the GPIF hardware.
+</description>
+<include>
+cyu3gpif.h</include>
+<arguments>
+(CyU3PGpifComparatorType type, uint32_t value, uint32_t mask)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PGpifInitComparator" href="com.cypress.fx3.doc/html/cyu3gpif_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PGpifSMControl">
+<functionSummary>
+<name>CyU3PGpifSMControl</name>
+<description>
+Function to pause/resume the GPIF state machine.
+</description>
+<include>
+cyu3gpif.h</include>
+<arguments>
+(CyBool_t pause)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PGpifSMControl" href="com.cypress.fx3.doc/html/cyu3gpif_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PGpifControlSWInput">
+<functionSummary>
+<name>CyU3PGpifControlSWInput</name>
+<description>
+Function to set/clear the software controlled state machine input.
+</description>
+<include>
+cyu3gpif.h</include>
+<arguments>
+(CyBool_t set)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PGpifControlSWInput" href="com.cypress.fx3.doc/html/cyu3gpif_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PGpifSocketConfigure">
+<functionSummary>
+<name>CyU3PGpifSocketConfigure</name>
+<description>
+Function to select an active socket on the P-port and to configure it.
+</description>
+<include>
+cyu3gpif.h</include>
+<arguments>
+(uint8_t threadIndex, CyU3PDmaSocketId_t socketNum, uint16_t watermark, CyBool_t flagOnData, uint8_t burst)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PGpifSocketConfigure" href="com.cypress.fx3.doc/html/cyu3gpif_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PGpifReadDataWords">
+<functionSummary>
+<name>CyU3PGpifReadDataWords</name>
+<description>
+Read a specified number of data words from the GPIF interface.
+</description>
+<include>
+cyu3gpif.h</include>
+<arguments>
+(uint32_t threadIndex, CyBool_t selectThread, uint32_t numWords, uint32_t *buffer_p, uint32_t waitOption)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PGpifReadDataWords" href="com.cypress.fx3.doc/html/cyu3gpif_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PGpifWriteDataWords">
+<functionSummary>
+<name>CyU3PGpifWriteDataWords</name>
+<description>
+Write a specified number of data words to the GPIF interface.
+</description>
+<include>
+cyu3gpif.h</include>
+<arguments>
+(uint32_t threadIndex, CyBool_t selectThread, uint32_t numWords, uint32_t *buffer_p, uint32_t waitOption)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PGpifWriteDataWords" href="com.cypress.fx3.doc/html/cyu3gpif_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PGpifOutputConfigure">
+<functionSummary>
+<name>CyU3PGpifOutputConfigure</name>
+<description>
+Configure the functionality of a GPIF output pin.
+</description>
+<include>
+cyu3gpif.h</include>
+<arguments>
+(uint8_t ctrlPin, CyU3PGpifOutput_t opFlag, CyBool_t isActiveLow)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PGpifOutputConfigure" href="com.cypress.fx3.doc/html/cyu3gpif_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PGpifGetSMState">
+<functionSummary>
+<name>CyU3PGpifGetSMState</name>
+<description>
+Get the current state of the GPIF state machine.
+</description>
+<include>
+cyu3gpif.h</include>
+<arguments>
+(uint8_t *curState_p)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PGpifGetSMState" href="com.cypress.fx3.doc/html/cyu3gpif_8h.html#func-members"/></entry>
+</helpBook>
+</documentation>

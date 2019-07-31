@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documentation>
+<helpBook title="Cypress Context Help" type="HELP_TYPE_C">
+<entry keyword="CyU3PDmaSocketIsValid">
+<functionSummary>
+<name>CyU3PDmaSocketIsValid</name>
+<description>
+Validates the socket ID.
+</description>
+<include>
+cyu3socket.h</include>
+<arguments>
+(uint16_t sckId)</arguments>
+<returnType>
+CyBool_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaSocketIsValid" href="com.cypress.fx3.doc/html/cyu3socket_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaSocketIsValidProducer">
+<functionSummary>
+<name>CyU3PDmaSocketIsValidProducer</name>
+<description>
+Validates the socket ID as a producer.
+</description>
+<include>
+cyu3socket.h</include>
+<arguments>
+(uint16_t sckId)</arguments>
+<returnType>
+CyBool_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaSocketIsValidProducer" href="com.cypress.fx3.doc/html/cyu3socket_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaSocketIsValidConsumer">
+<functionSummary>
+<name>CyU3PDmaSocketIsValidConsumer</name>
+<description>
+Validates the socket ID as a producer.
+</description>
+<include>
+cyu3socket.h</include>
+<arguments>
+(uint16_t sckId)</arguments>
+<returnType>
+CyBool_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaSocketIsValidConsumer" href="com.cypress.fx3.doc/html/cyu3socket_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaSocketSetConfig">
+<functionSummary>
+<name>CyU3PDmaSocketSetConfig</name>
+<description>
+Sets the socket configuration.
+</description>
+<include>
+cyu3socket.h</include>
+<arguments>
+(uint16_t sckId, CyU3PDmaSocketConfig_t *sck_p)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaSocketSetConfig" href="com.cypress.fx3.doc/html/cyu3socket_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaSocketGetConfig">
+<functionSummary>
+<name>CyU3PDmaSocketGetConfig</name>
+<description>
+Gets the socket configuration.
+</description>
+<include>
+cyu3socket.h</include>
+<arguments>
+(uint16_t sckId, CyU3PDmaSocketConfig_t *sck_p)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaSocketGetConfig" href="com.cypress.fx3.doc/html/cyu3socket_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaSocketSetWrapUp">
+<functionSummary>
+<name>CyU3PDmaSocketSetWrapUp</name>
+<description>
+Sets the wrapup bit for the socket.
+</description>
+<include>
+cyu3socket.h</include>
+<arguments>
+(uint16_t sckId)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaSocketSetWrapUp" href="com.cypress.fx3.doc/html/cyu3socket_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaSocketDisable">
+<functionSummary>
+<name>CyU3PDmaSocketDisable</name>
+<description>
+Disables the selected socket.
+</description>
+<include>
+cyu3socket.h</include>
+<arguments>
+(uint16_t sckId)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaSocketDisable" href="com.cypress.fx3.doc/html/cyu3socket_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaSocketEnable">
+<functionSummary>
+<name>CyU3PDmaSocketEnable</name>
+<description>
+Enables the selected socket.
+</description>
+<include>
+cyu3socket.h</include>
+<arguments>
+(uint16_t sckId)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaSocketEnable" href="com.cypress.fx3.doc/html/cyu3socket_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaUpdateSocketSuspendOption">
+<functionSummary>
+<name>CyU3PDmaUpdateSocketSuspendOption</name>
+<description>
+Updates the options for the socket suspend.
+</description>
+<include>
+cyu3socket.h</include>
+<arguments>
+(uint16_t sckId, uint16_t suspendOption)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaUpdateSocketSuspendOption" href="com.cypress.fx3.doc/html/cyu3socket_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaUpdateSocketResume">
+<functionSummary>
+<name>CyU3PDmaUpdateSocketResume</name>
+<description>
+Resumes a socket from the suspended state.
+</description>
+<include>
+cyu3socket.h</include>
+<arguments>
+(uint16_t sckId, uint16_t suspendOption)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaUpdateSocketResume" href="com.cypress.fx3.doc/html/cyu3socket_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaSocketSendEvent">
+<functionSummary>
+<name>CyU3PDmaSocketSendEvent</name>
+<description>
+Send an event to the socket.
+</description>
+<include>
+cyu3socket.h</include>
+<arguments>
+(uint16_t sckId, uint16_t dscrIndex, CyBool_t isOccupied)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaSocketSendEvent" href="com.cypress.fx3.doc/html/cyu3socket_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaSocketRegisterCallback">
+<functionSummary>
+<name>CyU3PDmaSocketRegisterCallback</name>
+<description>
+Register a callback handler for custom socket interrupts.
+</description>
+<include>
+cyu3socket.h</include>
+<arguments>
+(CyU3PDmaSocketCallback_t cb)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaSocketRegisterCallback" href="com.cypress.fx3.doc/html/cyu3socket_8h.html#func-members"/></entry>
+</helpBook>
+</documentation>

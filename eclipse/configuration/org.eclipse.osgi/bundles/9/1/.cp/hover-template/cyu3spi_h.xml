@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documentation>
+<helpBook title="Cypress Context Help" type="HELP_TYPE_C">
+<entry keyword="CyU3PSpiInit">
+<functionSummary>
+<name>CyU3PSpiInit</name>
+<description>
+Starts the SPI interface block on the device.
+</description>
+<include>
+cyu3spi.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSpiInit" href="com.cypress.fx3.doc/html/cyu3spi_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSpiDeInit">
+<functionSummary>
+<name>CyU3PSpiDeInit</name>
+<description>
+Stops the SPI module.
+</description>
+<include>
+cyu3spi.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSpiDeInit" href="com.cypress.fx3.doc/html/cyu3spi_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSpiSetConfig">
+<functionSummary>
+<name>CyU3PSpiSetConfig</name>
+<description>
+Sets and configures SPI interface parameters.
+</description>
+<include>
+cyu3spi.h</include>
+<arguments>
+(CyU3PSpiConfig_t *config, CyU3PSpiIntrCb_t cb)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSpiSetConfig" href="com.cypress.fx3.doc/html/cyu3spi_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSpiSetSsnLine">
+<functionSummary>
+<name>CyU3PSpiSetSsnLine</name>
+<description>
+Assert / Deassert the SSN Line.
+</description>
+<include>
+cyu3spi.h</include>
+<arguments>
+(CyBool_t isHigh)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSpiSetSsnLine" href="com.cypress.fx3.doc/html/cyu3spi_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSpiTransmitWords">
+<functionSummary>
+<name>CyU3PSpiTransmitWords</name>
+<description>
+Transmits data word by word over the SPI interface.
+</description>
+<include>
+cyu3spi.h</include>
+<arguments>
+(uint8_t *data, uint32_t byteCount)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSpiTransmitWords" href="com.cypress.fx3.doc/html/cyu3spi_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSpiReceiveWords">
+<functionSummary>
+<name>CyU3PSpiReceiveWords</name>
+<description>
+Receives data word by word over the Spi interface.
+</description>
+<include>
+cyu3spi.h</include>
+<arguments>
+(uint8_t *data, uint32_t byteCount)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSpiReceiveWords" href="com.cypress.fx3.doc/html/cyu3spi_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSpiSetBlockXfer">
+<functionSummary>
+<name>CyU3PSpiSetBlockXfer</name>
+<description>
+This function enables the DMA transfer.
+</description>
+<include>
+cyu3spi.h</include>
+<arguments>
+(uint32_t txSize, uint32_t rxSize)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSpiSetBlockXfer" href="com.cypress.fx3.doc/html/cyu3spi_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSpiDisableBlockXfer">
+<functionSummary>
+<name>CyU3PSpiDisableBlockXfer</name>
+<description>
+This function disabled the TX / RX DMA functionality.
+</description>
+<include>
+cyu3spi.h</include>
+<arguments>
+(CyBool_t rxDisable, CyBool_t txDisable)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSpiDisableBlockXfer" href="com.cypress.fx3.doc/html/cyu3spi_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSpiWaitForBlockXfer">
+<functionSummary>
+<name>CyU3PSpiWaitForBlockXfer</name>
+<description>
+Wait until the ongoing SPI data transfer is finished.
+</description>
+<include>
+cyu3spi.h</include>
+<arguments>
+(CyBool_t isRead)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSpiWaitForBlockXfer" href="com.cypress.fx3.doc/html/cyu3spi_8h.html#func-members"/></entry>
+</helpBook>
+</documentation>

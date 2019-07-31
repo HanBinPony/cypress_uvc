@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documentation>
+<helpBook title="Cypress Context Help" type="HELP_TYPE_C">
+<entry keyword="CyU3PUartInit">
+<functionSummary>
+<name>CyU3PUartInit</name>
+<description>
+Starts the UART hardware block on the device.
+</description>
+<include>
+cyu3uart.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUartInit" href="com.cypress.fx3.doc/html/cyu3uart_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUartDeInit">
+<functionSummary>
+<name>CyU3PUartDeInit</name>
+<description>
+Stops the UART hardware block.
+</description>
+<include>
+cyu3uart.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUartDeInit" href="com.cypress.fx3.doc/html/cyu3uart_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUartSetConfig">
+<functionSummary>
+<name>CyU3PUartSetConfig</name>
+<description>
+Sets the UART interface parameters.
+</description>
+<include>
+cyu3uart.h</include>
+<arguments>
+(CyU3PUartConfig_t *config, CyU3PUartIntrCb_t cb)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUartSetConfig" href="com.cypress.fx3.doc/html/cyu3uart_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUartTxSetBlockXfer">
+<functionSummary>
+<name>CyU3PUartTxSetBlockXfer</name>
+<description>
+Sets the number of bytes to be transmitted by the UART.
+</description>
+<include>
+cyu3uart.h</include>
+<arguments>
+(uint32_t txSize)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUartTxSetBlockXfer" href="com.cypress.fx3.doc/html/cyu3uart_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUartRxSetBlockXfer">
+<functionSummary>
+<name>CyU3PUartRxSetBlockXfer</name>
+<description>
+Sets the number of bytes to be received by the UART.
+</description>
+<include>
+cyu3uart.h</include>
+<arguments>
+(uint32_t rxSize)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUartRxSetBlockXfer" href="com.cypress.fx3.doc/html/cyu3uart_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUartTransmitBytes">
+<functionSummary>
+<name>CyU3PUartTransmitBytes</name>
+<description>
+Transmits data through the UART interface on a byte by byte basis.
+</description>
+<include>
+cyu3uart.h</include>
+<arguments>
+(uint8_t *data_p, uint32_t count, CyU3PReturnStatus_t *status)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUartTransmitBytes" href="com.cypress.fx3.doc/html/cyu3uart_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUartReceiveBytes">
+<functionSummary>
+<name>CyU3PUartReceiveBytes</name>
+<description>
+Receives data from the UART interface on a byte by byte basis.
+</description>
+<include>
+cyu3uart.h</include>
+<arguments>
+(uint8_t *data_p, uint32_t count, CyU3PReturnStatus_t *status)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUartReceiveBytes" href="com.cypress.fx3.doc/html/cyu3uart_8h.html#func-members"/></entry>
+</helpBook>
+</documentation>

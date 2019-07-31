@@ -1,0 +1,1339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documentation>
+<helpBook title="Cypress Context Help" type="HELP_TYPE_C">
+<entry keyword="tx_application_define">
+<functionSummary>
+<name>tx_application_define</name>
+<description>
+the ThreadX entry function that is typically called from the application's main() function.
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(VOID *)</arguments>
+<returnType>
+VOID</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_application_define" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_kernel_enter">
+<functionSummary>
+<name>tx_kernel_enter</name>
+<description>
+the function prototypes of the ThreadX API.
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(VOID)</arguments>
+<returnType>
+VOID</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_kernel_enter" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_block_allocate">
+<functionSummary>
+<name>tx_block_allocate</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_BLOCK_POOL *pool_ptr, VOID **block_ptr, ULONG wait_option)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_block_allocate" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="_txe_block_pool_create">
+<functionSummary>
+<name>_txe_block_pool_create</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_BLOCK_POOL *pool_ptr, CHAR *name_ptr, ULONG block_size, VOID *pool_start, ULONG pool_size, UINT pool_control_block_size)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on _txe_block_pool_create" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_block_pool_delete">
+<functionSummary>
+<name>tx_block_pool_delete</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_BLOCK_POOL *pool_ptr)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_block_pool_delete" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_block_pool_info_get">
+<functionSummary>
+<name>tx_block_pool_info_get</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_BLOCK_POOL *pool_ptr, CHAR **name, ULONG *available_blocks, ULONG *total_blocks, TX_THREAD **first_suspended, ULONG *suspended_count, TX_BLOCK_POOL **next_pool)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_block_pool_info_get" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_block_pool_performance_info_get">
+<functionSummary>
+<name>tx_block_pool_performance_info_get</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_BLOCK_POOL *pool_ptr, ULONG *allocates, ULONG *releases, ULONG *suspensions, ULONG *timeouts)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_block_pool_performance_info_get" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_block_pool_performance_system_info_get">
+<functionSummary>
+<name>tx_block_pool_performance_system_info_get</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(ULONG *allocates, ULONG *releases, ULONG *suspensions, ULONG *timeouts)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_block_pool_performance_system_info_get" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_block_pool_prioritize">
+<functionSummary>
+<name>tx_block_pool_prioritize</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_BLOCK_POOL *pool_ptr)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_block_pool_prioritize" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_block_release">
+<functionSummary>
+<name>tx_block_release</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(VOID *block_ptr)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_block_release" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_byte_allocate">
+<functionSummary>
+<name>tx_byte_allocate</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_BYTE_POOL *pool_ptr, VOID **memory_ptr, ULONG memory_size, ULONG wait_option)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_byte_allocate" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="_txe_byte_pool_create">
+<functionSummary>
+<name>_txe_byte_pool_create</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_BYTE_POOL *pool_ptr, CHAR *name_ptr, VOID *pool_start, ULONG pool_size, UINT pool_control_block_size)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on _txe_byte_pool_create" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_byte_pool_delete">
+<functionSummary>
+<name>tx_byte_pool_delete</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_BYTE_POOL *pool_ptr)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_byte_pool_delete" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_byte_pool_info_get">
+<functionSummary>
+<name>tx_byte_pool_info_get</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_BYTE_POOL *pool_ptr, CHAR **name, ULONG *available_bytes, ULONG *fragments, TX_THREAD **first_suspended, ULONG *suspended_count, TX_BYTE_POOL **next_pool)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_byte_pool_info_get" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_byte_pool_performance_info_get">
+<functionSummary>
+<name>tx_byte_pool_performance_info_get</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_BYTE_POOL *pool_ptr, ULONG *allocates, ULONG *releases, ULONG *fragments_searched, ULONG *merges, ULONG *splits, ULONG *suspensions, ULONG *timeouts)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_byte_pool_performance_info_get" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_byte_pool_performance_system_info_get">
+<functionSummary>
+<name>tx_byte_pool_performance_system_info_get</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(ULONG *allocates, ULONG *releases, ULONG *fragments_searched, ULONG *merges, ULONG *splits, ULONG *suspensions, ULONG *timeouts)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_byte_pool_performance_system_info_get" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_byte_pool_prioritize">
+<functionSummary>
+<name>tx_byte_pool_prioritize</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_BYTE_POOL *pool_ptr)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_byte_pool_prioritize" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_byte_release">
+<functionSummary>
+<name>tx_byte_release</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(VOID *memory_ptr)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_byte_release" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="_txe_event_flags_create">
+<functionSummary>
+<name>_txe_event_flags_create</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_EVENT_FLAGS_GROUP *group_ptr, CHAR *name_ptr, UINT event_control_block_size)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on _txe_event_flags_create" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_event_flags_delete">
+<functionSummary>
+<name>tx_event_flags_delete</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_EVENT_FLAGS_GROUP *group_ptr)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_event_flags_delete" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_event_flags_get">
+<functionSummary>
+<name>tx_event_flags_get</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_EVENT_FLAGS_GROUP *group_ptr, ULONG requested_flags, UINT get_option, ULONG *actual_flags_ptr, ULONG wait_option)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_event_flags_get" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_event_flags_info_get">
+<functionSummary>
+<name>tx_event_flags_info_get</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_EVENT_FLAGS_GROUP *group_ptr, CHAR **name, ULONG *current_flags, TX_THREAD **first_suspended, ULONG *suspended_count, TX_EVENT_FLAGS_GROUP **next_group)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_event_flags_info_get" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_event_flags_performance_info_get">
+<functionSummary>
+<name>tx_event_flags_performance_info_get</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_EVENT_FLAGS_GROUP *group_ptr, ULONG *sets, ULONG *gets, ULONG *suspensions, ULONG *timeouts)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_event_flags_performance_info_get" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_event_flags_performance_system_info_get">
+<functionSummary>
+<name>tx_event_flags_performance_system_info_get</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(ULONG *sets, ULONG *gets, ULONG *suspensions, ULONG *timeouts)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_event_flags_performance_system_info_get" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_event_flags_set">
+<functionSummary>
+<name>tx_event_flags_set</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_EVENT_FLAGS_GROUP *group_ptr, ULONG flags_to_set, UINT set_option)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_event_flags_set" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_event_flags_set_notify">
+<functionSummary>
+<name>tx_event_flags_set_notify</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_EVENT_FLAGS_GROUP *group_ptr, VOID(*events_set_notify)(TX_EVENT_FLAGS_GROUP *))</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_event_flags_set_notify" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_interrupt_control">
+<functionSummary>
+<name>tx_interrupt_control</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(UINT new_posture)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_interrupt_control" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="_txe_mutex_create">
+<functionSummary>
+<name>_txe_mutex_create</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_MUTEX *mutex_ptr, CHAR *name_ptr, UINT inherit, UINT mutex_control_block_size)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on _txe_mutex_create" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_mutex_delete">
+<functionSummary>
+<name>tx_mutex_delete</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_MUTEX *mutex_ptr)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_mutex_delete" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_mutex_get">
+<functionSummary>
+<name>tx_mutex_get</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_MUTEX *mutex_ptr, ULONG wait_option)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_mutex_get" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_mutex_info_get">
+<functionSummary>
+<name>tx_mutex_info_get</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_MUTEX *mutex_ptr, CHAR **name, ULONG *count, TX_THREAD **owner, TX_THREAD **first_suspended, ULONG *suspended_count, TX_MUTEX **next_mutex)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_mutex_info_get" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_mutex_performance_info_get">
+<functionSummary>
+<name>tx_mutex_performance_info_get</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_MUTEX *mutex_ptr, ULONG *puts, ULONG *gets, ULONG *suspensions, ULONG *timeouts, ULONG *inversions, ULONG *inheritances)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_mutex_performance_info_get" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_mutex_performance_system_info_get">
+<functionSummary>
+<name>tx_mutex_performance_system_info_get</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(ULONG *puts, ULONG *gets, ULONG *suspensions, ULONG *timeouts, ULONG *inversions, ULONG *inheritances)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_mutex_performance_system_info_get" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_mutex_prioritize">
+<functionSummary>
+<name>tx_mutex_prioritize</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_MUTEX *mutex_ptr)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_mutex_prioritize" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_mutex_put">
+<functionSummary>
+<name>tx_mutex_put</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_MUTEX *mutex_ptr)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_mutex_put" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="_txe_queue_create">
+<functionSummary>
+<name>_txe_queue_create</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_QUEUE *queue_ptr, CHAR *name_ptr, UINT message_size, VOID *queue_start, ULONG queue_size, UINT queue_control_block_size)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on _txe_queue_create" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_queue_delete">
+<functionSummary>
+<name>tx_queue_delete</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_QUEUE *queue_ptr)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_queue_delete" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_queue_flush">
+<functionSummary>
+<name>tx_queue_flush</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_QUEUE *queue_ptr)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_queue_flush" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_queue_info_get">
+<functionSummary>
+<name>tx_queue_info_get</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_QUEUE *queue_ptr, CHAR **name, ULONG *enqueued, ULONG *available_storage, TX_THREAD **first_suspended, ULONG *suspended_count, TX_QUEUE **next_queue)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_queue_info_get" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_queue_performance_info_get">
+<functionSummary>
+<name>tx_queue_performance_info_get</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_QUEUE *queue_ptr, ULONG *messages_sent, ULONG *messages_received, ULONG *empty_suspensions, ULONG *full_suspensions, ULONG *full_errors, ULONG *timeouts)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_queue_performance_info_get" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_queue_performance_system_info_get">
+<functionSummary>
+<name>tx_queue_performance_system_info_get</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(ULONG *messages_sent, ULONG *messages_received, ULONG *empty_suspensions, ULONG *full_suspensions, ULONG *full_errors, ULONG *timeouts)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_queue_performance_system_info_get" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_queue_receive">
+<functionSummary>
+<name>tx_queue_receive</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_QUEUE *queue_ptr, VOID *destination_ptr, ULONG wait_option)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_queue_receive" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_queue_send">
+<functionSummary>
+<name>tx_queue_send</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_QUEUE *queue_ptr, VOID *source_ptr, ULONG wait_option)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_queue_send" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_queue_send_notify">
+<functionSummary>
+<name>tx_queue_send_notify</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_QUEUE *queue_ptr, VOID(*queue_send_notify)(TX_QUEUE *))</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_queue_send_notify" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_queue_front_send">
+<functionSummary>
+<name>tx_queue_front_send</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_QUEUE *queue_ptr, VOID *source_ptr, ULONG wait_option)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_queue_front_send" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_queue_prioritize">
+<functionSummary>
+<name>tx_queue_prioritize</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_QUEUE *queue_ptr)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_queue_prioritize" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_semaphore_ceiling_put">
+<functionSummary>
+<name>tx_semaphore_ceiling_put</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_SEMAPHORE *semaphore_ptr, ULONG ceiling)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_semaphore_ceiling_put" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="_txe_semaphore_create">
+<functionSummary>
+<name>_txe_semaphore_create</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_SEMAPHORE *semaphore_ptr, CHAR *name_ptr, ULONG initial_count, UINT semaphore_control_block_size)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on _txe_semaphore_create" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_semaphore_delete">
+<functionSummary>
+<name>tx_semaphore_delete</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_SEMAPHORE *semaphore_ptr)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_semaphore_delete" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_semaphore_get">
+<functionSummary>
+<name>tx_semaphore_get</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_SEMAPHORE *semaphore_ptr, ULONG wait_option)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_semaphore_get" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_semaphore_info_get">
+<functionSummary>
+<name>tx_semaphore_info_get</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_SEMAPHORE *semaphore_ptr, CHAR **name, ULONG *current_value, TX_THREAD **first_suspended, ULONG *suspended_count, TX_SEMAPHORE **next_semaphore)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_semaphore_info_get" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_semaphore_performance_info_get">
+<functionSummary>
+<name>tx_semaphore_performance_info_get</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_SEMAPHORE *semaphore_ptr, ULONG *puts, ULONG *gets, ULONG *suspensions, ULONG *timeouts)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_semaphore_performance_info_get" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_semaphore_performance_system_info_get">
+<functionSummary>
+<name>tx_semaphore_performance_system_info_get</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(ULONG *puts, ULONG *gets, ULONG *suspensions, ULONG *timeouts)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_semaphore_performance_system_info_get" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_semaphore_prioritize">
+<functionSummary>
+<name>tx_semaphore_prioritize</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_SEMAPHORE *semaphore_ptr)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_semaphore_prioritize" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_semaphore_put">
+<functionSummary>
+<name>tx_semaphore_put</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_SEMAPHORE *semaphore_ptr)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_semaphore_put" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_semaphore_put_notify">
+<functionSummary>
+<name>tx_semaphore_put_notify</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_SEMAPHORE *semaphore_ptr, VOID(*semaphore_put_notify)(TX_SEMAPHORE *))</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_semaphore_put_notify" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="_txe_thread_create">
+<functionSummary>
+<name>_txe_thread_create</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_THREAD *thread_ptr, CHAR *name_ptr, VOID(*entry_function)(ULONG), ULONG entry_input, VOID *stack_start, ULONG stack_size, UINT priority, UINT preempt_threshold, ULONG time_slice, UINT auto_start, UINT thread_control_block_size)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on _txe_thread_create" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_thread_delete">
+<functionSummary>
+<name>tx_thread_delete</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_THREAD *thread_ptr)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_thread_delete" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_thread_entry_exit_notify">
+<functionSummary>
+<name>tx_thread_entry_exit_notify</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_THREAD *thread_ptr, VOID(*thread_entry_exit_notify)(TX_THREAD *, UINT))</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_thread_entry_exit_notify" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_thread_identify">
+<functionSummary>
+<name>tx_thread_identify</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(VOID)</arguments>
+<returnType>
+TX_THREAD</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_thread_identify" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_thread_info_get">
+<functionSummary>
+<name>tx_thread_info_get</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_THREAD *thread_ptr, CHAR **name, UINT *state, ULONG *run_count, UINT *priority, UINT *preemption_threshold, ULONG *time_slice, TX_THREAD **next_thread, TX_THREAD **next_suspended_thread)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_thread_info_get" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_thread_performance_info_get">
+<functionSummary>
+<name>tx_thread_performance_info_get</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_THREAD *thread_ptr, ULONG *resumptions, ULONG *suspensions, ULONG *solicited_preemptions, ULONG *interrupt_preemptions, ULONG *priority_inversions, ULONG *time_slices, ULONG *relinquishes, ULONG *timeouts, ULONG *wait_aborts, TX_THREAD **last_preempted_by)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_thread_performance_info_get" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_thread_performance_system_info_get">
+<functionSummary>
+<name>tx_thread_performance_system_info_get</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(ULONG *resumptions, ULONG *suspensions, ULONG *solicited_preemptions, ULONG *interrupt_preemptions, ULONG *priority_inversions, ULONG *time_slices, ULONG *relinquishes, ULONG *timeouts, ULONG *wait_aborts, ULONG *non_idle_returns, ULONG *idle_returns)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_thread_performance_system_info_get" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_thread_preemption_change">
+<functionSummary>
+<name>tx_thread_preemption_change</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_THREAD *thread_ptr, UINT new_threshold, UINT *old_threshold)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_thread_preemption_change" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_thread_priority_change">
+<functionSummary>
+<name>tx_thread_priority_change</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_THREAD *thread_ptr, UINT new_priority, UINT *old_priority)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_thread_priority_change" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_thread_relinquish">
+<functionSummary>
+<name>tx_thread_relinquish</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(VOID)</arguments>
+<returnType>
+VOID</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_thread_relinquish" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_thread_reset">
+<functionSummary>
+<name>tx_thread_reset</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_THREAD *thread_ptr)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_thread_reset" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_thread_resume">
+<functionSummary>
+<name>tx_thread_resume</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_THREAD *thread_ptr)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_thread_resume" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_thread_sleep">
+<functionSummary>
+<name>tx_thread_sleep</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(ULONG timer_ticks)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_thread_sleep" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_thread_stack_error_notify">
+<functionSummary>
+<name>tx_thread_stack_error_notify</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(VOID(*stack_error_handler)(TX_THREAD *))</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_thread_stack_error_notify" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_thread_suspend">
+<functionSummary>
+<name>tx_thread_suspend</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_THREAD *thread_ptr)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_thread_suspend" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_thread_terminate">
+<functionSummary>
+<name>tx_thread_terminate</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_THREAD *thread_ptr)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_thread_terminate" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_thread_time_slice_change">
+<functionSummary>
+<name>tx_thread_time_slice_change</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_THREAD *thread_ptr, ULONG new_time_slice, ULONG *old_time_slice)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_thread_time_slice_change" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_thread_wait_abort">
+<functionSummary>
+<name>tx_thread_wait_abort</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_THREAD *thread_ptr)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_thread_wait_abort" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_time_get">
+<functionSummary>
+<name>tx_time_get</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(VOID)</arguments>
+<returnType>
+ULONG</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_time_get" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_time_set">
+<functionSummary>
+<name>tx_time_set</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(ULONG new_time)</arguments>
+<returnType>
+VOID</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_time_set" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_timer_activate">
+<functionSummary>
+<name>tx_timer_activate</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_TIMER *timer_ptr)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_timer_activate" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_timer_change">
+<functionSummary>
+<name>tx_timer_change</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_TIMER *timer_ptr, ULONG initial_ticks, ULONG reschedule_ticks)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_timer_change" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="_txe_timer_create">
+<functionSummary>
+<name>_txe_timer_create</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_TIMER *timer_ptr, CHAR *name_ptr, VOID(*expiration_function)(ULONG), ULONG expiration_input, ULONG initial_ticks, ULONG reschedule_ticks, UINT auto_activate, UINT timer_control_block_size)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on _txe_timer_create" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_timer_deactivate">
+<functionSummary>
+<name>tx_timer_deactivate</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_TIMER *timer_ptr)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_timer_deactivate" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_timer_delete">
+<functionSummary>
+<name>tx_timer_delete</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_TIMER *timer_ptr)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_timer_delete" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_timer_info_get">
+<functionSummary>
+<name>tx_timer_info_get</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_TIMER *timer_ptr, CHAR **name, UINT *active, ULONG *remaining_ticks, ULONG *reschedule_ticks, TX_TIMER **next_timer)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_timer_info_get" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_timer_performance_info_get">
+<functionSummary>
+<name>tx_timer_performance_info_get</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(TX_TIMER *timer_ptr, ULONG *activates, ULONG *reactivates, ULONG *deactivates, ULONG *expirations, ULONG *expiration_adjusts)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_timer_performance_info_get" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_timer_performance_system_info_get">
+<functionSummary>
+<name>tx_timer_performance_system_info_get</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(ULONG *activates, ULONG *reactivates, ULONG *deactivates, ULONG *expirations, ULONG *expiration_adjusts)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_timer_performance_system_info_get" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_trace_enable">
+<functionSummary>
+<name>tx_trace_enable</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(VOID *trace_buffer_start, ULONG trace_buffer_size, ULONG registry_entries)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_trace_enable" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_trace_disable">
+<functionSummary>
+<name>tx_trace_disable</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(VOID)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_trace_disable" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_trace_isr_enter_insert">
+<functionSummary>
+<name>tx_trace_isr_enter_insert</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(ULONG isr_id)</arguments>
+<returnType>
+VOID</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_trace_isr_enter_insert" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_trace_isr_exit_insert">
+<functionSummary>
+<name>tx_trace_isr_exit_insert</name>
+<description>
+
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(ULONG isr_id)</arguments>
+<returnType>
+VOID</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_trace_isr_exit_insert" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+
+<entry keyword="tx_trace_user_event_insert">
+<functionSummary>
+<name>tx_trace_user_event_insert</name>
+<description>
+ine if a C++ compiler is being used. If so, complete the standard C conditional started above.
+</description>
+<include>
+tx_api.h</include>
+<arguments>
+(ULONG event_id, ULONG info_field_1, ULONG info_field_2, ULONG info_field_3, ULONG info_field_4)</arguments>
+<returnType>
+UINT</returnType>
+</functionSummary>
+<topic title="Futher Help on tx_trace_user_event_insert" href="com.cypress.fx3.doc/html/tx__api_8h.html#func-members"/></entry>
+</helpBook>
+</documentation>

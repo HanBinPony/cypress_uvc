@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documentation>
+<helpBook title="Cypress Context Help" type="HELP_TYPE_C">
+<entry keyword="CyU3PDmaMsgSend">
+<functionSummary>
+<name>CyU3PDmaMsgSend</name>
+<description>
+Queue a task message to the DMA module.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(uint32_t *msg, uint32_t waitOption, CyBool_t priority)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaMsgSend" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaChannelGetHandle">
+<functionSummary>
+<name>CyU3PDmaChannelGetHandle</name>
+<description>
+Returns handle associated with the socket ID.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaSocketId_t sckId)</arguments>
+<returnType>
+CyU3PDmaChannel</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaChannelGetHandle" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaChannelCreate">
+<functionSummary>
+<name>CyU3PDmaChannelCreate</name>
+<description>
+Create a DMA channel.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaChannel *handle, CyU3PDmaType_t type, CyU3PDmaChannelConfig_t *config)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaChannelCreate" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaChannelDestroy">
+<functionSummary>
+<name>CyU3PDmaChannelDestroy</name>
+<description>
+Destroy a DMA channel.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaChannel *handle)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaChannelDestroy" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaChannelUpdateMode">
+<functionSummary>
+<name>CyU3PDmaChannelUpdateMode</name>
+<description>
+Update the DMA mode for the channel.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaChannel *handle, CyU3PDmaMode_t dmaMode)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaChannelUpdateMode" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaChannelSetXfer">
+<functionSummary>
+<name>CyU3PDmaChannelSetXfer</name>
+<description>
+Set a transfer on the DMA channel.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaChannel *handle, uint32_t count)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaChannelSetXfer" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaChannelSetWrapUp">
+<functionSummary>
+<name>CyU3PDmaChannelSetWrapUp</name>
+<description>
+Wraps up the current active buffer for the channel from the producer side.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaChannel *handle)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaChannelSetWrapUp" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaChannelSetSuspend">
+<functionSummary>
+<name>CyU3PDmaChannelSetSuspend</name>
+<description>
+Set the suspend options for the sockets.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaChannel *handle, CyU3PDmaSckSuspType_t prodSusp, CyU3PDmaSckSuspType_t consSusp)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaChannelSetSuspend" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaChannelResume">
+<functionSummary>
+<name>CyU3PDmaChannelResume</name>
+<description>
+Resume a suspended DMA channel.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaChannel *handle, CyBool_t isProdResume, CyBool_t isConsResume)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaChannelResume" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaChannelAbort">
+<functionSummary>
+<name>CyU3PDmaChannelAbort</name>
+<description>
+Aborts a DMA channel.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaChannel *handle)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaChannelAbort" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaChannelReset">
+<functionSummary>
+<name>CyU3PDmaChannelReset</name>
+<description>
+Aborts and resets a DMA channel.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaChannel *handle)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaChannelReset" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaChannelSetupSendBuffer">
+<functionSummary>
+<name>CyU3PDmaChannelSetupSendBuffer</name>
+<description>
+Send an external buffer to the consumer.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaChannel *handle, CyU3PDmaBuffer_t *buffer_p)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaChannelSetupSendBuffer" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaChannelSetupRecvBuffer">
+<functionSummary>
+<name>CyU3PDmaChannelSetupRecvBuffer</name>
+<description>
+Receive data to an external buffer.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaChannel *handle, CyU3PDmaBuffer_t *buffer_p)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaChannelSetupRecvBuffer" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaChannelWaitForRecvBuffer">
+<functionSummary>
+<name>CyU3PDmaChannelWaitForRecvBuffer</name>
+<description>
+Wait for the data to be filled.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaChannel *handle, CyU3PDmaBuffer_t *buffer_p, uint32_t waitOption)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaChannelWaitForRecvBuffer" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaChannelGetBuffer">
+<functionSummary>
+<name>CyU3PDmaChannelGetBuffer</name>
+<description>
+Get the current buffer pointer.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaChannel *handle, CyU3PDmaBuffer_t *buffer_p, uint32_t waitOption)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaChannelGetBuffer" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaChannelCommitBuffer">
+<functionSummary>
+<name>CyU3PDmaChannelCommitBuffer</name>
+<description>
+Commit the buffer to be sent to the consumer.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaChannel *handle, uint16_t count, uint16_t bufStatus)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaChannelCommitBuffer" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaChannelDiscardBuffer">
+<functionSummary>
+<name>CyU3PDmaChannelDiscardBuffer</name>
+<description>
+Discard buffer in the current DMA descriptor.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaChannel *handle)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaChannelDiscardBuffer" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaChannelWaitForCompletion">
+<functionSummary>
+<name>CyU3PDmaChannelWaitForCompletion</name>
+<description>
+Wait for the current DMA transaction to complete.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaChannel *handle, uint32_t waitOption)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaChannelWaitForCompletion" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaChannelGetStatus">
+<functionSummary>
+<name>CyU3PDmaChannelGetStatus</name>
+<description>
+This functions returns the current channel status.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaChannel *handle, CyU3PDmaState_t *state, uint32_t *prodXferCount, uint32_t *consXferCount)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaChannelGetStatus" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaChannelCacheControl">
+<functionSummary>
+<name>CyU3PDmaChannelCacheControl</name>
+<description>
+This function enables / disables DMA API internal d-cache handling.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaChannel *handle, CyBool_t isDmaHandleDCache)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaChannelCacheControl" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaMultiChannelGetHandle">
+<functionSummary>
+<name>CyU3PDmaMultiChannelGetHandle</name>
+<description>
+Returns handle associated with the socket ID.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaSocketId_t sckId)</arguments>
+<returnType>
+CyU3PDmaMultiChannel</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaMultiChannelGetHandle" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaMultiChannelCreate">
+<functionSummary>
+<name>CyU3PDmaMultiChannelCreate</name>
+<description>
+Create a DMA channel. This function is to be used for only multi socket DMA channels.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaMultiChannel *handle, CyU3PDmaMultiType_t type, CyU3PDmaMultiChannelConfig_t *config)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaMultiChannelCreate" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaMultiChannelDestroy">
+<functionSummary>
+<name>CyU3PDmaMultiChannelDestroy</name>
+<description>
+Destroy a DMA channel. This function is to be used for only multi socket DMA channels.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaMultiChannel *handle)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaMultiChannelDestroy" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaMultiChannelUpdateMode">
+<functionSummary>
+<name>CyU3PDmaMultiChannelUpdateMode</name>
+<description>
+Update the DMA mode for the multi channel.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaMultiChannel *handle, CyU3PDmaMode_t dmaMode)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaMultiChannelUpdateMode" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaMultiChannelSetXfer">
+<functionSummary>
+<name>CyU3PDmaMultiChannelSetXfer</name>
+<description>
+Set a transfer on the DMA channel. This function should be used for only multi socket operations.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaMultiChannel *handle, uint32_t count, uint16_t multiSckOffset)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaMultiChannelSetXfer" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaMultiChannelSetWrapUp">
+<functionSummary>
+<name>CyU3PDmaMultiChannelSetWrapUp</name>
+<description>
+Wraps up the current active buffer for the channel from the producer side.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaMultiChannel *handle, uint16_t multiSckOffset)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaMultiChannelSetWrapUp" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaMultiChannelSetSuspend">
+<functionSummary>
+<name>CyU3PDmaMultiChannelSetSuspend</name>
+<description>
+Set the suspend options for the sockets.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaMultiChannel *handle, CyU3PDmaSckSuspType_t prodSusp, CyU3PDmaSckSuspType_t consSusp)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaMultiChannelSetSuspend" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaMultiChannelResume">
+<functionSummary>
+<name>CyU3PDmaMultiChannelResume</name>
+<description>
+Resume a suspended DMA channel.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaMultiChannel *handle, CyBool_t isProdResume, CyBool_t isConsResume)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaMultiChannelResume" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaMultiChannelAbort">
+<functionSummary>
+<name>CyU3PDmaMultiChannelAbort</name>
+<description>
+Aborts a DMA channel. This function shall be used only with multi socket operations.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaMultiChannel *handle)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaMultiChannelAbort" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaMultiChannelReset">
+<functionSummary>
+<name>CyU3PDmaMultiChannelReset</name>
+<description>
+Aborts and resets a DMA channel. This function shall be used only with multi socket operations.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaMultiChannel *handle)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaMultiChannelReset" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaMultiChannelSetupSendBuffer">
+<functionSummary>
+<name>CyU3PDmaMultiChannelSetupSendBuffer</name>
+<description>
+Send an external buffer to the consumer.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaMultiChannel *handle, CyU3PDmaBuffer_t *buffer_p, uint16_t multiSckOffset)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaMultiChannelSetupSendBuffer" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaMultiChannelSetupRecvBuffer">
+<functionSummary>
+<name>CyU3PDmaMultiChannelSetupRecvBuffer</name>
+<description>
+Receive data to an external buffer.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaMultiChannel *handle, CyU3PDmaBuffer_t *buffer_p, uint16_t multiSckOffset)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaMultiChannelSetupRecvBuffer" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaMultiChannelWaitForRecvBuffer">
+<functionSummary>
+<name>CyU3PDmaMultiChannelWaitForRecvBuffer</name>
+<description>
+Wait for the data to be filled.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaMultiChannel *handle, CyU3PDmaBuffer_t *buffer_p, uint32_t waitOption)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaMultiChannelWaitForRecvBuffer" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaMultiChannelGetBuffer">
+<functionSummary>
+<name>CyU3PDmaMultiChannelGetBuffer</name>
+<description>
+Get the current buffer pointer. This function shall be used only with multi socket operations.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaMultiChannel *handle, CyU3PDmaBuffer_t *buffer_p, uint32_t waitOption)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaMultiChannelGetBuffer" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaMultiChannelCommitBuffer">
+<functionSummary>
+<name>CyU3PDmaMultiChannelCommitBuffer</name>
+<description>
+Commit the buffer to be sent to the consumer. This function shall be used only with multi socket operations.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaMultiChannel *handle, uint16_t count, uint16_t bufStatus)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaMultiChannelCommitBuffer" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaMultiChannelDiscardBuffer">
+<functionSummary>
+<name>CyU3PDmaMultiChannelDiscardBuffer</name>
+<description>
+Discard buffer in the current DMA descriptor. This functions should be used only with multi socket DMA channels.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaMultiChannel *handle)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaMultiChannelDiscardBuffer" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaMultiChannelWaitForCompletion">
+<functionSummary>
+<name>CyU3PDmaMultiChannelWaitForCompletion</name>
+<description>
+Wait for the current DMA transaction to complete. This function should be used only for the multi socket DMA channels.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaMultiChannel *handle, uint32_t waitOption)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaMultiChannelWaitForCompletion" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaMultiChannelGetStatus">
+<functionSummary>
+<name>CyU3PDmaMultiChannelGetStatus</name>
+<description>
+This functions returns the current multi channel status.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaMultiChannel *handle, CyU3PDmaState_t *state, uint32_t *prodXferCount, uint32_t *consXferCount, uint8_t sckIndex)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaMultiChannelGetStatus" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaMultiChannelCacheControl">
+<functionSummary>
+<name>CyU3PDmaMultiChannelCacheControl</name>
+<description>
+This function enables / disables DMA API internal d-cache handling for multi-channels.
+</description>
+<include>
+cyu3dma.h</include>
+<arguments>
+(CyU3PDmaMultiChannel *handle, CyBool_t isDmaHandleDCache)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaMultiChannelCacheControl" href="com.cypress.fx3.doc/html/cyu3dma_8h.html#func-members"/></entry>
+</helpBook>
+</documentation>

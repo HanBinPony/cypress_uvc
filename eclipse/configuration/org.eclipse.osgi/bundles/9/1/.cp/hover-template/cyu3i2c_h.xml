@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documentation>
+<helpBook title="Cypress Context Help" type="HELP_TYPE_C">
+<entry keyword="CyU3PI2cInit">
+<functionSummary>
+<name>CyU3PI2cInit</name>
+<description>
+Starts the I2C interface block on the FX3.
+</description>
+<include>
+cyu3i2c.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PI2cInit" href="com.cypress.fx3.doc/html/cyu3i2c_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PI2cDeInit">
+<functionSummary>
+<name>CyU3PI2cDeInit</name>
+<description>
+Stops the I2C module.
+</description>
+<include>
+cyu3i2c.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PI2cDeInit" href="com.cypress.fx3.doc/html/cyu3i2c_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PI2cSetConfig">
+<functionSummary>
+<name>CyU3PI2cSetConfig</name>
+<description>
+Sets the I2C interface parameters.
+</description>
+<include>
+cyu3i2c.h</include>
+<arguments>
+(CyU3PI2cConfig_t *config, CyU3PI2cIntrCb_t cb)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PI2cSetConfig" href="com.cypress.fx3.doc/html/cyu3i2c_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PI2cSendCommand">
+<functionSummary>
+<name>CyU3PI2cSendCommand</name>
+<description>
+Perform a read or write operation to the I2C slave.
+</description>
+<include>
+cyu3i2c.h</include>
+<arguments>
+(CyU3PI2cPreamble_t *preamble, uint32_t byteCount, CyBool_t isRead)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PI2cSendCommand" href="com.cypress.fx3.doc/html/cyu3i2c_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PI2cTransmitBytes">
+<functionSummary>
+<name>CyU3PI2cTransmitBytes</name>
+<description>
+Writes a small number of bytes to an I2C slave.
+</description>
+<include>
+cyu3i2c.h</include>
+<arguments>
+(CyU3PI2cPreamble_t *preamble, uint8_t *data, uint32_t byteCount, uint32_t retryCount)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PI2cTransmitBytes" href="com.cypress.fx3.doc/html/cyu3i2c_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PI2cReceiveBytes">
+<functionSummary>
+<name>CyU3PI2cReceiveBytes</name>
+<description>
+Reads a small number of bytes one by one from an I2C slave.
+</description>
+<include>
+cyu3i2c.h</include>
+<arguments>
+(CyU3PI2cPreamble_t *preamble, uint8_t *data, uint32_t byteCount, uint32_t retryCount)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PI2cReceiveBytes" href="com.cypress.fx3.doc/html/cyu3i2c_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PI2cWaitForAck">
+<functionSummary>
+<name>CyU3PI2cWaitForAck</name>
+<description>
+Poll an I2C slave until all of the preamble is ACKed.
+</description>
+<include>
+cyu3i2c.h</include>
+<arguments>
+(CyU3PI2cPreamble_t *preamble, uint32_t retryCount)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PI2cWaitForAck" href="com.cypress.fx3.doc/html/cyu3i2c_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PI2cWaitForBlockXfer">
+<functionSummary>
+<name>CyU3PI2cWaitForBlockXfer</name>
+<description>
+Wait until the ongoing I2C data transfer is finished.
+</description>
+<include>
+cyu3i2c.h</include>
+<arguments>
+(CyBool_t isRead)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PI2cWaitForBlockXfer" href="com.cypress.fx3.doc/html/cyu3i2c_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PI2cGetErrorCode">
+<functionSummary>
+<name>CyU3PI2cGetErrorCode</name>
+<description>
+Retrieves the error code as defined by CyU3PI2cError_t.
+</description>
+<include>
+cyu3i2c.h</include>
+<arguments>
+(CyU3PI2cError_t *error_p)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PI2cGetErrorCode" href="com.cypress.fx3.doc/html/cyu3i2c_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSetI2cDriveStrength">
+<functionSummary>
+<name>CyU3PSetI2cDriveStrength</name>
+<description>
+Set the IO drive strength for the I2C interface.
+</description>
+<include>
+cyu3i2c.h</include>
+<arguments>
+(CyU3PDriveStrengthState_t i2cDriveStrength)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSetI2cDriveStrength" href="com.cypress.fx3.doc/html/cyu3i2c_8h.html#func-members"/></entry>
+</helpBook>
+</documentation>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documentation>
+<helpBook title="Cypress Context Help" type="HELP_TYPE_C">
+<entry keyword="CyU3PMemCopy32">
+<functionSummary>
+<name>CyU3PMemCopy32</name>
+<description>
+Copy data word-wise from one memory location to another.
+</description>
+<include>
+cyu3utils.h</include>
+<arguments>
+(uint32_t *dest, uint32_t *src, uint32_t count)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PMemCopy32" href="com.cypress.fx3.doc/html/cyu3utils_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PBusyWait">
+<functionSummary>
+<name>CyU3PBusyWait</name>
+<description>
+Delay function based on busy spinning in a loop.
+</description>
+<include>
+cyu3utils.h</include>
+<arguments>
+(uint16_t usWait)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PBusyWait" href="com.cypress.fx3.doc/html/cyu3utils_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PComputeChecksum">
+<functionSummary>
+<name>CyU3PComputeChecksum</name>
+<description>
+Compute a checksum over a user specified data buffer.
+</description>
+<include>
+cyu3utils.h</include>
+<arguments>
+(uint32_t *buffer, uint8_t length, uint32_t *chkSum)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PComputeChecksum" href="com.cypress.fx3.doc/html/cyu3utils_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PReadDeviceRegisters">
+<functionSummary>
+<name>CyU3PReadDeviceRegisters</name>
+<description>
+Function to read one or more FX3 device registers.
+</description>
+<include>
+cyu3utils.h</include>
+<arguments>
+(uvint32_t *regAddr, uint8_t numRefs, uint32_t *dataBuf)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PReadDeviceRegisters" href="com.cypress.fx3.doc/html/cyu3utils_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PWriteDeviceRegisters">
+<functionSummary>
+<name>CyU3PWriteDeviceRegisters</name>
+<description>
+Function to write one or more FX3 device registers.
+</description>
+<include>
+cyu3utils.h</include>
+<arguments>
+(uvint32_t *regAddr, uint8_t numRefs, uint32_t *dataBuf)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PWriteDeviceRegisters" href="com.cypress.fx3.doc/html/cyu3utils_8h.html#func-members"/></entry>
+</helpBook>
+</documentation>

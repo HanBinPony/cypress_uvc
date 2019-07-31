@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documentation>
+	<helpBook title="Cypress Context Help" type="HELP_TYPE_C">
+		<entry keyword="CyU3PDmaDscrListCreate">
+			<functionSummary>
+				<name>CyU3PDmaDscrListCreate</name>
+				<description>
+					Create (init) the free descriptor list.
+				</description>
+				<include>
+					cyu3descriptor.h
+				</include>
+				<arguments>
+					(void)
+				</arguments>
+				<returnType>
+					void
+				</returnType>
+			</functionSummary>
+			<topic title="Futher Help on CyU3PDmaDscrListCreate"
+				href="com.cypress.fx3.doc/html/cyu3descriptor_8h.html#func-members" />
+		</entry>
+
+		<entry keyword="CyU3PDmaDscrListDestroy">
+			<functionSummary>
+				<name>CyU3PDmaDscrListDestroy</name>
+				<description>
+					Destroy (de-init) the free descriptor list.
+				</description>
+				<include>
+					cyu3descriptor.h
+				</include>
+				<arguments>
+					(void)
+				</arguments>
+				<returnType>
+					void
+				</returnType>
+			</functionSummary>
+			<topic title="Futher Help on CyU3PDmaDscrListDestroy"
+				href="com.cypress.fx3.doc/html/cyu3descriptor_8h.html#func-members" />
+		</entry>
+
+		<entry keyword="CyU3PDmaDscrGet">
+			<functionSummary>
+				<name>CyU3PDmaDscrGet</name>
+				<description>
+					Get a descriptor number from the free list.
+				</description>
+				<include>
+					cyu3descriptor.h
+				</include>
+				<arguments>
+					(uint16_t *index_p)
+				</arguments>
+				<returnType>
+					CyU3PReturnStatus_t
+				</returnType>
+			</functionSummary>
+			<topic title="Futher Help on CyU3PDmaDscrGet"
+				href="com.cypress.fx3.doc/html/cyu3descriptor_8h.html#func-members" />
+		</entry>
+
+		<entry keyword="CyU3PDmaDscrPut">
+			<functionSummary>
+				<name>CyU3PDmaDscrPut</name>
+				<description>
+					Add a descriptor number to the free list.
+				</description>
+				<include>
+					cyu3descriptor.h
+				</include>
+				<arguments>
+					(uint16_t index)
+				</arguments>
+				<returnType>
+					CyU3PReturnStatus_t
+				</returnType>
+			</functionSummary>
+			<topic title="Futher Help on CyU3PDmaDscrPut"
+				href="com.cypress.fx3.doc/html/cyu3descriptor_8h.html#func-members" />
+		</entry>
+
+		<entry keyword="CyU3PDmaDscrGetFreeCount">
+			<functionSummary>
+				<name>CyU3PDmaDscrGetFreeCount</name>
+				<description>
+					Get the number of free descriptors available.
+				</description>
+				<include>
+					cyu3descriptor.h
+				</include>
+				<arguments>
+					(void)
+				</arguments>
+				<returnType>
+					uint16_t
+				</returnType>
+			</functionSummary>
+			<topic title="Futher Help on CyU3PDmaDscrGetFreeCount"
+				href="com.cypress.fx3.doc/html/cyu3descriptor_8h.html#func-members" />
+		</entry>
+
+		<entry keyword="CyU3PDmaDscrSetConfig">
+			<functionSummary>
+				<name>CyU3PDmaDscrSetConfig</name>
+				<description>
+					Set the descriptor configuration.
+				</description>
+				<include>
+					cyu3descriptor.h
+				</include>
+				<arguments>
+					(uint16_t index, CyU3PDmaDescriptor_t *dscr_p)
+				</arguments>
+				<returnType>
+					CyU3PReturnStatus_t
+				</returnType>
+			</functionSummary>
+			<topic title="Futher Help on CyU3PDmaDscrSetConfig"
+				href="com.cypress.fx3.doc/html/cyu3descriptor_8h.html#func-members" />
+		</entry>
+
+		<entry keyword="CyU3PDmaDscrGetConfig">
+			<functionSummary>
+				<name>CyU3PDmaDscrGetConfig</name>
+				<description>
+					Get the descriptor configuration.
+				</description>
+				<include>
+					cyu3descriptor.h
+				</include>
+				<arguments>
+					(uint16_t index, CyU3PDmaDescriptor_t *dscr_p)
+				</arguments>
+				<returnType>
+					CyU3PReturnStatus_t
+				</returnType>
+			</functionSummary>
+			<topic title="Futher Help on CyU3PDmaDscrGetConfig"
+				href="com.cypress.fx3.doc/html/cyu3descriptor_8h.html#func-members" />
+		</entry>
+
+		<entry keyword="CyU3PDmaDscrChainCreate">
+			<functionSummary>
+				<name>CyU3PDmaDscrChainCreate</name>
+				<description>
+					Create a circular chain of descriptors.
+				</description>
+				<include>
+					cyu3descriptor.h
+				</include>
+				<arguments>
+					(uint16_t *dscrIndex_p, uint16_t count, uint16_t bufferSize, uint32_t
+					dscrSync)
+				</arguments>
+				<returnType>
+					CyU3PReturnStatus_t
+				</returnType>
+			</functionSummary>
+			<topic title="Futher Help on CyU3PDmaDscrChainCreate"
+				href="com.cypress.fx3.doc/html/cyu3descriptor_8h.html#func-members" />
+		</entry>
+
+		<entry keyword="CyU3PDmaDscrChainDestroy">
+			<functionSummary>
+				<name>CyU3PDmaDscrChainDestroy</name>
+				<description>
+					Frees the previously created chain of descriptors.
+				</description>
+				<include>
+					cyu3descriptor.h
+				</include>
+				<arguments>
+					(uint16_t dscrIndex, uint16_t count, CyBool_t isProdChain, CyBool_t
+					freeBuffer)
+				</arguments>
+				<returnType>
+					void
+				</returnType>
+			</functionSummary>
+			<topic title="Futher Help on CyU3PDmaDscrChainDestroy"
+				href="com.cypress.fx3.doc/html/cyu3descriptor_8h.html#func-members" />
+		</entry>
+	</helpBook>
+</documentation>

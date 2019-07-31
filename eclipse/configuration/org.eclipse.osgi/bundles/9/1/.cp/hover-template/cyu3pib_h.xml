@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documentation>
+<helpBook title="Cypress Context Help" type="HELP_TYPE_C">
+<entry keyword="CyU3PPibInit">
+<functionSummary>
+<name>CyU3PPibInit</name>
+<description>
+Initialize the P-port interface block.
+</description>
+<include>
+cyu3pib.h</include>
+<arguments>
+(CyBool_t doInit, CyU3PPibClock_t *pibClock)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PPibInit" href="com.cypress.fx3.doc/html/cyu3pib_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PPibDeInit">
+<functionSummary>
+<name>CyU3PPibDeInit</name>
+<description>
+De-initialize the P-port interface block.
+</description>
+<include>
+cyu3pib.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PPibDeInit" href="com.cypress.fx3.doc/html/cyu3pib_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSetPportDriveStrength">
+<functionSummary>
+<name>CyU3PSetPportDriveStrength</name>
+<description>
+Set the IO drive strength for the Pport.
+</description>
+<include>
+cyu3pib.h</include>
+<arguments>
+(CyU3PDriveStrengthState_t pportDriveStrength)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSetPportDriveStrength" href="com.cypress.fx3.doc/html/cyu3pib_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PPibRegisterCallback">
+<functionSummary>
+<name>CyU3PPibRegisterCallback</name>
+<description>
+Register a callback function for notification of PIB interrupts.
+</description>
+<include>
+cyu3pib.h</include>
+<arguments>
+(CyU3PPibIntrCb_t cbFunc, uint32_t intMask)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PPibRegisterCallback" href="com.cypress.fx3.doc/html/cyu3pib_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PPibSelectIntSources">
+<functionSummary>
+<name>CyU3PPibSelectIntSources</name>
+<description>
+Select the sources that trigger an FX3 interrupt to external processor.
+</description>
+<include>
+cyu3pib.h</include>
+<arguments>
+(CyBool_t pibSockEn, CyBool_t gpifIntEn, CyBool_t pibErrEn, CyBool_t mboxIntEn, CyBool_t wakeupEn)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PPibSelectIntSources" href="com.cypress.fx3.doc/html/cyu3pib_8h.html#func-members"/></entry>
+</helpBook>
+</documentation>

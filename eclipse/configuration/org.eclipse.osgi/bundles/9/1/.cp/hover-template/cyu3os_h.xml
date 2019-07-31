@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documentation>
+<helpBook title="Cypress Context Help" type="HELP_TYPE_C">
+<entry keyword="CyU3PUndefinedHandler">
+<functionSummary>
+<name>CyU3PUndefinedHandler</name>
+<description>
+The undefined instruction exception handler.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUndefinedHandler" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PPrefetchHandler">
+<functionSummary>
+<name>CyU3PPrefetchHandler</name>
+<description>
+The pre-fetch error exception handler.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PPrefetchHandler" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PAbortHandler">
+<functionSummary>
+<name>CyU3PAbortHandler</name>
+<description>
+The abort error exception handler.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PAbortHandler" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PKernelEntry">
+<functionSummary>
+<name>CyU3PKernelEntry</name>
+<description>
+RTOS kernel entry function.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PKernelEntry" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PApplicationDefine">
+<functionSummary>
+<name>CyU3PApplicationDefine</name>
+<description>
+The driver specific OS primitives and threads shall be created in this function.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PApplicationDefine" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3POsTimerInit">
+<functionSummary>
+<name>CyU3POsTimerInit</name>
+<description>
+Initialize the OS scheduler timer.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(uint16_t intervalMs)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3POsTimerInit" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3POsTimerHandler">
+<functionSummary>
+<name>CyU3POsTimerHandler</name>
+<description>
+The OS scheduler.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3POsTimerHandler" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PIrqContextSave">
+<functionSummary>
+<name>CyU3PIrqContextSave</name>
+<description>
+This function saves the active thread context when entering the IRQ context.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PIrqContextSave" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PIrqVectoredContextSave">
+<functionSummary>
+<name>CyU3PIrqVectoredContextSave</name>
+<description>
+This function saves the thread context when entering the IRQ context.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PIrqVectoredContextSave" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PIrqContextRestore">
+<functionSummary>
+<name>CyU3PIrqContextRestore</name>
+<description>
+This function restores the thread context after handling an IRQ interrupt.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PIrqContextRestore" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PFiqContextSave">
+<functionSummary>
+<name>CyU3PFiqContextSave</name>
+<description>
+This function saves the active thread context when entering the FIQ context.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PFiqContextSave" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PFiqContextRestore">
+<functionSummary>
+<name>CyU3PFiqContextRestore</name>
+<description>
+This function restores the thread context after handling an FIQ interrupt.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PFiqContextRestore" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PIrqNestingStart">
+<functionSummary>
+<name>CyU3PIrqNestingStart</name>
+<description>
+This function switches the ARM mode from IRQ to SYS to allow nesting of interrupts.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PIrqNestingStart" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PIrqNestingStop">
+<functionSummary>
+<name>CyU3PIrqNestingStop</name>
+<description>
+This function switches the ARM mode from SYS to IRQ at the end of a interrupt handler.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PIrqNestingStop" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PMemInit">
+<functionSummary>
+<name>CyU3PMemInit</name>
+<description>
+Initialize the custom heap manager for OS specific allocation calls
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PMemInit" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PMemAlloc">
+<functionSummary>
+<name>CyU3PMemAlloc</name>
+<description>
+Allocate memory from the dynamic memory pool.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(uint32_t size)</arguments>
+<returnType>
+void *</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PMemAlloc" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PMemFree">
+<functionSummary>
+<name>CyU3PMemFree</name>
+<description>
+Free memory allocated from the dynamic memory pool.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(void *mem_p)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PMemFree" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PMemSet">
+<functionSummary>
+<name>CyU3PMemSet</name>
+<description>
+Fill a region of memory with a specified value.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(uint8_t *ptr, uint8_t data, uint32_t count)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PMemSet" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PMemCopy">
+<functionSummary>
+<name>CyU3PMemCopy</name>
+<description>
+Copy data from one memory location to another.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(uint8_t *dest, uint8_t *src, uint32_t count)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PMemCopy" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PMemCmp">
+<functionSummary>
+<name>CyU3PMemCmp</name>
+<description>
+Compare the contents of two memory buffers.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(const void *s1, const void *s2, uint32_t n)</arguments>
+<returnType>
+int32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PMemCmp" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaBufferInit">
+<functionSummary>
+<name>CyU3PDmaBufferInit</name>
+<description>
+Initialize the buffer allocator.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaBufferInit" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaBufferDeInit">
+<functionSummary>
+<name>CyU3PDmaBufferDeInit</name>
+<description>
+De-initialize the buffer allocator.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaBufferDeInit" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaBufferAlloc">
+<functionSummary>
+<name>CyU3PDmaBufferAlloc</name>
+<description>
+Allocate the required amount of buffer memory.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(uint16_t size)</arguments>
+<returnType>
+void *</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaBufferAlloc" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PDmaBufferFree">
+<functionSummary>
+<name>CyU3PDmaBufferFree</name>
+<description>
+Free the previously allocated buffer area.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(void *buffer)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PDmaBufferFree" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PFreeHeaps">
+<functionSummary>
+<name>CyU3PFreeHeaps</name>
+<description>
+Free up the custom heap manager and the buffer allocator.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PFreeHeaps" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PBytePoolCreate">
+<functionSummary>
+<name>CyU3PBytePoolCreate</name>
+<description>
+This function creates and initializes a memory byte pool.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PBytePool *pool_p, void *poolStart, uint32_t poolSize)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PBytePoolCreate" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PBytePoolDestroy">
+<functionSummary>
+<name>CyU3PBytePoolDestroy</name>
+<description>
+De-initialize and free up a memory byte pool.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PBytePool *pool_p)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PBytePoolDestroy" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PByteAlloc">
+<functionSummary>
+<name>CyU3PByteAlloc</name>
+<description>
+Allocate memory from a byte pool.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PBytePool *pool_p, void **mem_p, uint32_t memSize, uint32_t waitOption)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PByteAlloc" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PByteFree">
+<functionSummary>
+<name>CyU3PByteFree</name>
+<description>
+Frees memory allocated by the CyU3PByteAlloc function.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(void *mem_p)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PByteFree" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PBlockPoolCreate">
+<functionSummary>
+<name>CyU3PBlockPoolCreate</name>
+<description>
+Creates and initializes a memory block pool.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PBlockPool *pool_p, uint32_t blockSize, void *poolStart, uint32_t poolSize)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PBlockPoolCreate" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PBlockPoolDestroy">
+<functionSummary>
+<name>CyU3PBlockPoolDestroy</name>
+<description>
+De-initialize a block memory pool.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PBlockPool *pool_p)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PBlockPoolDestroy" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PBlockAlloc">
+<functionSummary>
+<name>CyU3PBlockAlloc</name>
+<description>
+Allocate a memory buffer from a block pool.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PBlockPool *pool_p, void **block_p, uint32_t waitOption)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PBlockAlloc" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PBlockFree">
+<functionSummary>
+<name>CyU3PBlockFree</name>
+<description>
+Frees a memory buffer allocated from a block pool.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(void *block_p)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PBlockFree" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PThreadCreate">
+<functionSummary>
+<name>CyU3PThreadCreate</name>
+<description>
+This function creates a new thread.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PThread *thread_p, char *threadName, CyU3PThreadEntry_t entryFn, uint32_t entryInput, void *stackStart, uint32_t stackSize, uint32_t priority, uint32_t preemptThreshold, uint32_t timeSlice, uint32_t autoStart)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PThreadCreate" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PThreadDestroy">
+<functionSummary>
+<name>CyU3PThreadDestroy</name>
+<description>
+Free up and remove a thread from the RTOS scheduler.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PThread *thread_ptr)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PThreadDestroy" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PThreadIdentify">
+<functionSummary>
+<name>CyU3PThreadIdentify</name>
+<description>
+Get the thread structure corresponding to the current thread.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyU3PThread</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PThreadIdentify" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PThreadInfoGet">
+<functionSummary>
+<name>CyU3PThreadInfoGet</name>
+<description>
+Extract information regarding a specified thread.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PThread *thread_p, uint8_t **name_p, uint32_t *priority, uint32_t *preemptionThreshold, uint32_t *timeSlice)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PThreadInfoGet" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PThreadPriorityChange">
+<functionSummary>
+<name>CyU3PThreadPriorityChange</name>
+<description>
+Change the priority of a thread.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PThread *thread_p, uint32_t newPriority, uint32_t *oldPriority)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PThreadPriorityChange" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PThreadRelinquish">
+<functionSummary>
+<name>CyU3PThreadRelinquish</name>
+<description>
+Relinquish control to the OS scheduler.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PThreadRelinquish" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PThreadSleep">
+<functionSummary>
+<name>CyU3PThreadSleep</name>
+<description>
+Puts a thread to sleep for the specified timer ticks.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(uint32_t timerTicks)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PThreadSleep" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PThreadSuspend">
+<functionSummary>
+<name>CyU3PThreadSuspend</name>
+<description>
+Suspends the specified thread.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PThread *thread_p)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PThreadSuspend" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PThreadResume">
+<functionSummary>
+<name>CyU3PThreadResume</name>
+<description>
+Resume operation of a thread that was previously suspended.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PThread *thread_p)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PThreadResume" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PThreadWaitAbort">
+<functionSummary>
+<name>CyU3PThreadWaitAbort</name>
+<description>
+Returns a thread to ready state by aborting all waits on the thread.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PThread *thread_p)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PThreadWaitAbort" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PQueueCreate">
+<functionSummary>
+<name>CyU3PQueueCreate</name>
+<description>
+Create a message queue.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PQueue *queue_p, uint32_t messageSize, void *queueStart, uint32_t queueSize)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PQueueCreate" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PQueueDestroy">
+<functionSummary>
+<name>CyU3PQueueDestroy</name>
+<description>
+Free up a previously created message queue.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PQueue *queue_p)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PQueueDestroy" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PQueueSend">
+<functionSummary>
+<name>CyU3PQueueSend</name>
+<description>
+Queue a new message on the specified message queue.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PQueue *queue_p, void *src_p, uint32_t waitOption)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PQueueSend" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PQueuePrioritySend">
+<functionSummary>
+<name>CyU3PQueuePrioritySend</name>
+<description>
+Add a new message at the head of a message queue.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PQueue *queue_p, void *src_p, uint32_t waitOption)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PQueuePrioritySend" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PQueueReceive">
+<functionSummary>
+<name>CyU3PQueueReceive</name>
+<description>
+Receive a message from a message queue.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PQueue *queue_p, void *dest_p, uint32_t waitOption)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PQueueReceive" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PQueueFlush">
+<functionSummary>
+<name>CyU3PQueueFlush</name>
+<description>
+Flushes all messages on a queue.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PQueue *queue_p)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PQueueFlush" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PMutexCreate">
+<functionSummary>
+<name>CyU3PMutexCreate</name>
+<description>
+Create a mutex variable.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PMutex *mutex_p, uint32_t priorityInherit)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PMutexCreate" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PMutexDestroy">
+<functionSummary>
+<name>CyU3PMutexDestroy</name>
+<description>
+Destroy a mutex variable.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PMutex *mutex_p)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PMutexDestroy" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PMutexGet">
+<functionSummary>
+<name>CyU3PMutexGet</name>
+<description>
+Get the lock on a mutex variable.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PMutex *mutex_p, uint32_t waitOption)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PMutexGet" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PMutexPut">
+<functionSummary>
+<name>CyU3PMutexPut</name>
+<description>
+Release the lock on a mutex variable.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PMutex *mutex_p)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PMutexPut" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSemaphoreCreate">
+<functionSummary>
+<name>CyU3PSemaphoreCreate</name>
+<description>
+section documents the semaphore functions supported by the FX3 firmware.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PSemaphore *semaphore_p, uint32_t initialCount)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSemaphoreCreate" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSemaphoreDestroy">
+<functionSummary>
+<name>CyU3PSemaphoreDestroy</name>
+<description>
+Destroy a semaphore object.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PSemaphore *semaphore_p)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSemaphoreDestroy" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSemaphoreGet">
+<functionSummary>
+<name>CyU3PSemaphoreGet</name>
+<description>
+Get an instance from the specified counting semaphore.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PSemaphore *semaphore_p, uint32_t waitOption)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSemaphoreGet" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSemaphorePut">
+<functionSummary>
+<name>CyU3PSemaphorePut</name>
+<description>
+Release an instance of the specified counting semaphore.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PSemaphore *semaphore_p)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSemaphorePut" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PEventCreate">
+<functionSummary>
+<name>CyU3PEventCreate</name>
+<description>
+Create an event flag group.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PEvent *event_p)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PEventCreate" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PEventDestroy">
+<functionSummary>
+<name>CyU3PEventDestroy</name>
+<description>
+Destroy an event flag group.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PEvent *event_p)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PEventDestroy" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PEventSet">
+<functionSummary>
+<name>CyU3PEventSet</name>
+<description>
+Update one or more flags in an event group.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PEvent *event_p, uint32_t rqtFlag, uint32_t setOption)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PEventSet" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PEventGet">
+<functionSummary>
+<name>CyU3PEventGet</name>
+<description>
+Wait for or get the status of an event flag group.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PEvent *event_p, uint32_t rqtFlag, uint32_t getOption, uint32_t *flag_p, uint32_t waitOption)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PEventGet" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PTimerCreate">
+<functionSummary>
+<name>CyU3PTimerCreate</name>
+<description>
+Create an application timer.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PTimer *timer_p, CyU3PTimerCb_t expirationFunction, uint32_t expirationInput, uint32_t initialTicks, uint32_t rescheduleTicks, uint32_t timerOption)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PTimerCreate" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PTimerDestroy">
+<functionSummary>
+<name>CyU3PTimerDestroy</name>
+<description>
+Destroy an application timer object.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PTimer *timer_p)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PTimerDestroy" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PTimerStart">
+<functionSummary>
+<name>CyU3PTimerStart</name>
+<description>
+Start an application timer.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PTimer *timer_p)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PTimerStart" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PTimerStop">
+<functionSummary>
+<name>CyU3PTimerStop</name>
+<description>
+Stop operation of an application timer.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PTimer *timer_p)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PTimerStop" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PTimerModify">
+<functionSummary>
+<name>CyU3PTimerModify</name>
+<description>
+Modify parameters of an application timer.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(CyU3PTimer *timer_p, uint32_t initialTicks, uint32_t rescheduleTicks)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PTimerModify" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PGetTime">
+<functionSummary>
+<name>CyU3PGetTime</name>
+<description>
+Get time from reset in terms of OS timer ticks.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+uint32_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PGetTime" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSetTime">
+<functionSummary>
+<name>CyU3PSetTime</name>
+<description>
+Update the timer tick count.
+</description>
+<include>
+cyu3os.h</include>
+<arguments>
+(uint32_t newTime)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSetTime" href="com.cypress.fx3.doc/html/cyu3os_8h.html#func-members"/></entry>
+</helpBook>
+</documentation>

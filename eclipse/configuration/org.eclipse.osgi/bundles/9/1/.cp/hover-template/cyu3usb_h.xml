@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documentation>
+<helpBook title="Cypress Context Help" type="HELP_TYPE_C">
+<entry keyword="CyU3PUsbRegisterEventCallback">
+<functionSummary>
+<name>CyU3PUsbRegisterEventCallback</name>
+<description>
+Register a USB event callback function.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(CyU3PUSBEventCb_t callback)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbRegisterEventCallback" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbRegisterSetupCallback">
+<functionSummary>
+<name>CyU3PUsbRegisterSetupCallback</name>
+<description>
+Register a USB setup request handler.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(CyU3PUSBSetupCb_t callback, CyBool_t fastEnum)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbRegisterSetupCallback" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbRegisterLPMRequestCallback">
+<functionSummary>
+<name>CyU3PUsbRegisterLPMRequestCallback</name>
+<description>
+Register a USB 3.0 LPM request handler callback.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(CyU3PUsbLPMReqCb_t cb)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbRegisterLPMRequestCallback" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbRegisterEpEvtCallback">
+<functionSummary>
+<name>CyU3PUsbRegisterEpEvtCallback</name>
+<description>
+Register a callback function for notification of USB endpoint events.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(CyU3PUsbEpEvtCb_t cbFunc, uint32_t eventMask, uint16_t outEpMask, uint16_t inEpMask)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbRegisterEpEvtCallback" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbIsStarted">
+<functionSummary>
+<name>CyU3PUsbIsStarted</name>
+<description>
+This function returns whether the USB device module has been started.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyBool_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbIsStarted" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbStart">
+<functionSummary>
+<name>CyU3PUsbStart</name>
+<description>
+Start the USB driver.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbStart" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbSetDesc">
+<functionSummary>
+<name>CyU3PUsbSetDesc</name>
+<description>
+Register a USB descriptor with the driver.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(CyU3PUSBSetDescType_t desc_type, uint8_t desc_index, uint8_t *desc)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbSetDesc" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbStop">
+<functionSummary>
+<name>CyU3PUsbStop</name>
+<description>
+Stop the USB driver.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbStop" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbStall">
+<functionSummary>
+<name>CyU3PUsbStall</name>
+<description>
+Set or clear the stall status of an endpoint.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(uint8_t ep, CyBool_t stall, CyBool_t toggle)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbStall" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PConnectState">
+<functionSummary>
+<name>CyU3PConnectState</name>
+<description>
+Enable / disable the USB connection.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(CyBool_t connect, CyBool_t ssEnable)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PConnectState" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbGetEpCfg">
+<functionSummary>
+<name>CyU3PUsbGetEpCfg</name>
+<description>
+Retrieve the current state of the specified endpoint.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(uint8_t ep, CyBool_t *isNak, CyBool_t *isStall)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbGetEpCfg" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbSetEpNak">
+<functionSummary>
+<name>CyU3PUsbSetEpNak</name>
+<description>
+Force or clear the NAK status on the specified endpoint.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(uint8_t ep, CyBool_t nak)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbSetEpNak" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PGetConnectState">
+<functionSummary>
+<name>CyU3PGetConnectState</name>
+<description>
+Check whether the FX3 device is currently connected to a host.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyBool_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PGetConnectState" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbAckSetup">
+<functionSummary>
+<name>CyU3PUsbAckSetup</name>
+<description>
+Complete the status handshake of a USB control request.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+void</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbAckSetup" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSetEpConfig">
+<functionSummary>
+<name>CyU3PSetEpConfig</name>
+<description>
+Configure a USB endpoint's properties.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(uint8_t ep, CyU3PEpConfig_t *epinfo)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSetEpConfig" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PSetEpPacketSize">
+<functionSummary>
+<name>CyU3PSetEpPacketSize</name>
+<description>
+Set the maximum packet size for a USB endpoint.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(uint8_t ep, uint16_t maxPktSize)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PSetEpPacketSize" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbSendEP0Data">
+<functionSummary>
+<name>CyU3PUsbSendEP0Data</name>
+<description>
+Send data to the USB host via EP0-IN.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(uint16_t count, uint8_t *buffer)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbSendEP0Data" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbGetEP0Data">
+<functionSummary>
+<name>CyU3PUsbGetEP0Data</name>
+<description>
+Read data associated with a control-OUT transfer.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(uint16_t count, uint8_t *buffer, uint16_t *readCount)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbGetEP0Data" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbFlushEp">
+<functionSummary>
+<name>CyU3PUsbFlushEp</name>
+<description>
+Clear (flush) all data buffers associated with a specified endpoint.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(uint8_t ep)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbFlushEp" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbResetEp">
+<functionSummary>
+<name>CyU3PUsbResetEp</name>
+<description>
+Resets the specified endpoint.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(uint8_t ep)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbResetEp" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbMapStream">
+<functionSummary>
+<name>CyU3PUsbMapStream</name>
+<description>
+Map a socket to stream of the specified endpoint.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(uint8_t ep, uint8_t socketNum, uint16_t streamId)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbMapStream" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbChangeMapping">
+<functionSummary>
+<name>CyU3PUsbChangeMapping</name>
+<description>
+Map a socket to stream of the specified endpoint.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(uint8_t ep, uint8_t socketNum, CyBool_t remap, uint16_t newstreamId, uint8_t newep)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbChangeMapping" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbGetSpeed">
+<functionSummary>
+<name>CyU3PUsbGetSpeed</name>
+<description>
+Get the connection speed at which USB is operating.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyU3PUSBSpeed_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbGetSpeed" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbVBattEnable">
+<functionSummary>
+<name>CyU3PUsbVBattEnable</name>
+<description>
+Configure USB block on FX3 to work off Vbatt power instead of Vbus.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(CyBool_t enable)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbVBattEnable" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbGetDevProperty">
+<functionSummary>
+<name>CyU3PUsbGetDevProperty</name>
+<description>
+Function that returns some properties of the USB device.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(CyU3PUsbDevProperty type, uint32_t *buf)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbGetDevProperty" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbSendErdy">
+<functionSummary>
+<name>CyU3PUsbSendErdy</name>
+<description>
+Function to send an ERDY TP to a USB 3.0 host.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(uint8_t ep, uint16_t bulkStream)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbSendErdy" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbSendNrdy">
+<functionSummary>
+<name>CyU3PUsbSendNrdy</name>
+<description>
+Function to send an NRDY TP to a USB 3.0 host.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(uint8_t ep, uint16_t bulkStream)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbSendNrdy" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbGetLinkPowerState">
+<functionSummary>
+<name>CyU3PUsbGetLinkPowerState</name>
+<description>
+Function to get the current power state of the USB 3.0 link.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(CyU3PUsbLinkPowerMode *mode_p)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbGetLinkPowerState" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbSetLinkPowerState">
+<functionSummary>
+<name>CyU3PUsbSetLinkPowerState</name>
+<description>
+Function to request a device entry into one of the U0, U1 or U2 link power modes.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(CyU3PUsbLinkPowerMode link_mode)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbSetLinkPowerState" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbEnableITPEvent">
+<functionSummary>
+<name>CyU3PUsbEnableITPEvent</name>
+<description>
+Function to enable/disable notification of SOF/ITP events to the application.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(CyBool_t enable)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbEnableITPEvent" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbDoRemoteWakeup">
+<functionSummary>
+<name>CyU3PUsbDoRemoteWakeup</name>
+<description>
+Trigger USB 2.0 Remote Wakeup signalling to the host.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbDoRemoteWakeup" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbForceFullSpeed">
+<functionSummary>
+<name>CyU3PUsbForceFullSpeed</name>
+<description>
+Function to force the USB 2.0 device connection to full speed.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(CyBool_t enable)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbForceFullSpeed" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbSendDevNotification">
+<functionSummary>
+<name>CyU3PUsbSendDevNotification</name>
+<description>
+Function to send a DEV_NOTIFICATION Transaction Packet to the host.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(uint8_t notificationType, uint32_t param0, uint32_t param1)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbSendDevNotification" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbLPMDisable">
+<functionSummary>
+<name>CyU3PUsbLPMDisable</name>
+<description>
+Function to prevent FX3 from entering U1/U2 states.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbLPMDisable" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+
+<entry keyword="CyU3PUsbLPMEnable">
+<functionSummary>
+<name>CyU3PUsbLPMEnable</name>
+<description>
+Function to re-enable automated handling of U1/U2 state entry.
+</description>
+<include>
+cyu3usb.h</include>
+<arguments>
+(void)</arguments>
+<returnType>
+CyU3PReturnStatus_t</returnType>
+</functionSummary>
+<topic title="Futher Help on CyU3PUsbLPMEnable" href="com.cypress.fx3.doc/html/cyu3usb_8h.html#func-members"/></entry>
+</helpBook>
+</documentation>
