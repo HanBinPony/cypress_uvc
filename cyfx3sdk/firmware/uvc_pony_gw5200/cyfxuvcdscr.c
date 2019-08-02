@@ -38,7 +38,7 @@ const uint8_t CyFxUSBDeviceDscr[] =
         0x02,                           /* Device Sub-class */
         0x01,                           /* Device protocol */
         0x40,                           /* Maxpacket size for EP0 : 64 bytes */
-        0xB4,0x04,                      /* Vendor ID */
+        0xB4,0x04,                      /* Vendor ID cypress */
         0xF8,0x00,                      /* Product ID */
         0x00,0x00,                      /* Device release number */
         0x01,                           /* Manufacture string index */
@@ -57,7 +57,7 @@ const uint8_t CyFxUSBDeviceDscrSS[] =
         0x02,                           /* Device Sub-class */
         0x01,                           /* Device protocol */
         0x09,                           /* Maxpacket size for EP0 : 2^9 Bytes */
-        0xB4,0x04,                      /* Vendor ID */
+        0xB4,0x04,                      /* Vendor ID cypress */
         0xF9,0x00,                      /* Product ID */
         0x00,0x00,                      /* Device release number */
         0x01,                           /* Manufacture string index */
@@ -841,17 +841,13 @@ const uint8_t CyFxUSBSSConfigDscr[] =
         0x05,                           /* Subtype: uncompressed frame I/F */
         0x01,                           /* Frame Descriptor Index */
         0x01,                           /* Still image capture method 1 supported */
-        //0x80, 0x07,                     /* Width in pixel 1920 */
-        0x6c, 0x08,                     /* Width in pixel 2156 */
+        0x80, 0x07,                     /* Width in pixel 1920 */
         0x38, 0x04,                     /* Height in pixel 1080 */
         //0x00,0x00,0x4E,0xED,            /* Min bit rate bits/s. 1920*1080*60*16bps */
         //0x00,0x00,0x4E,0xED,            /* Max bit rate bits/s. */
-        //0x00,0x80,0x53,0x3B,            /* Min bit rate bits/s. 1920*1080*30*16bps */
-        //0x00,0x80,0x53,0x3B,            /* Max bit rate bits/s. */
-        0x00,0x4c,0x9e,0x42,            /* Min bit rate bits/s. 2156*1080*30*16bps */
-        0x00,0x4c,0x9e,0x42,            /* Max bit rate bits/s. */
-        //0x00,0x00,0x80,0x02,            /* Maximum video or still frame size in bytes(Deprecated)*/
-        0x40,0x0F,0x47,0x00,            /* Maximum video or still frame size in bytes(Deprecated)*/
+        0x00,0x80,0x53,0x3B,            /* Min bit rate bits/s. 1920*1080*30*16bps */
+        0x00,0x80,0x53,0x3B,            /* Max bit rate bits/s. */
+        0x00,0x00,0x80,0x02,            /* Maximum video or still frame size in bytes(Deprecated)*/
         //0x0B, 0x8B, 0x02, 0x00,         /* 60fps Default Frame Interval */
         0x15, 0x16, 0x05, 0x00,         /* 30fps Default Frame Interval*/
         0x01,                           /* Frame interval(Frame Rate) types: Only one frame interval supported */
