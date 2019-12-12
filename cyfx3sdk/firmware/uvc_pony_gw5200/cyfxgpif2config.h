@@ -1,6 +1,6 @@
 /*
  * Project Name: fx3_uvc.cyfx
- * Time : 07/31/2019 17:13:26
+ * Time : 12/12/2019 12:29:21
  * Device Type: FX3
  * Project Type: GPIF2
  *
@@ -98,7 +98,7 @@ uint8_t CyFxGpifWavedataPosition[]  = {
    GPIF II configuration register values.
  */
 uint32_t CyFxGpifRegValue[]  = {
-    0x80008700,  /*  CY_U3P_PIB_GPIF_CONFIG */
+    0x80008300,  /*  CY_U3P_PIB_GPIF_CONFIG */
     0x00000067,  /*  CY_U3P_PIB_GPIF_BUS_CONFIG */
     0x00000000,  /*  CY_U3P_PIB_GPIF_BUS_CONFIG2 */
     0x00000046,  /*  CY_U3P_PIB_GPIF_AD_CONFIG */
@@ -108,7 +108,7 @@ uint32_t CyFxGpifRegValue[]  = {
     0x00000082,  /*  CY_U3P_PIB_GPIF_SERIAL_IN_CONFIG */
     0x00000782,  /*  CY_U3P_PIB_GPIF_SERIAL_OUT_CONFIG */
     0x00000050,  /*  CY_U3P_PIB_GPIF_CTRL_BUS_DIRECTION */
-    0x0000FFF8,  /*  CY_U3P_PIB_GPIF_CTRL_BUS_DEFAULT */
+    0x0000FFFC,  /*  CY_U3P_PIB_GPIF_CTRL_BUS_DEFAULT */
     0x00000008,  /*  CY_U3P_PIB_GPIF_CTRL_BUS_POLARITY */
     0x00000000,  /*  CY_U3P_PIB_GPIF_CTRL_BUS_TOGGLE */
     0x00000000,  /*  CY_U3P_PIB_GPIF_CTRL_BUS_SELECT */

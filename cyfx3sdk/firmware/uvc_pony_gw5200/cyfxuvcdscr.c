@@ -842,11 +842,14 @@ const uint8_t CyFxUSBSSConfigDscr[] =
         0x01,                           /* Frame Descriptor Index */
         0x01,                           /* Still image capture method 1 supported */
         0x80, 0x07,                     /* Width in pixel 1920 */
-        0x38, 0x04,                     /* Height in pixel 1080 */
+        //0x38, 0x04,                     /* Height in pixel 1080 */
+        0xFC, 0x03,                     /* Height in pixel 1080 */
         //0x00,0x00,0x4E,0xED,            /* Min bit rate bits/s. 1920*1080*60*16bps */
         //0x00,0x00,0x4E,0xED,            /* Max bit rate bits/s. */
-        0x00,0x80,0x53,0x3B,            /* Min bit rate bits/s. 1920*1080*30*16bps */
-        0x00,0x80,0x53,0x3B,            /* Max bit rate bits/s. */
+        //0x00,0x80,0x53,0x3B,            /* Min bit rate bits/s. 1920*1080*30*16bps */
+        //0x00,0x80,0x53,0x3B,            /* Max bit rate bits/s. */
+        0x00,0xC0,0x07,0x38,            /* Min bit rate bits/s. 1920*1020*30*16bps */
+        0x00,0xC0,0x07,0x38,            /* Max bit rate bits/s. */
         0x00,0x00,0x80,0x02,            /* Maximum video or still frame size in bytes(Deprecated)*/
         //0x0B, 0x8B, 0x02, 0x00,         /* 60fps Default Frame Interval */
         0x15, 0x16, 0x05, 0x00,         /* 30fps Default Frame Interval*/
